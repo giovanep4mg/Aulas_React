@@ -1,0 +1,48 @@
+
+
+@media (max-width: 1440px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;
+    }
+
+    div{
+        width: 70%;
+        height: 70%;
+    }
+
+    .toda-pagina{
+        background-color: #dec566;
+        border: 1px solid black;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .pagina{
+        border: 2px solid black;
+        padding: 1rem;
+    }
+
+    .titulo{
+        font-size: 1.8rem;
+        color: #1f1e1d;
+        text-align: center;
+    }
+
+    .imagem img{
+        width: 100%
+    }
+
+    b{
+        color: rgba(0, 0, 255, 0.63);
+    }
+
+    a{
+        color: cadetblue;
+    }
+
+}
