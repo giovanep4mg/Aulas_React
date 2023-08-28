@@ -79,6 +79,200 @@
                 </h2>
             </div>
         </section>
+        <!--Aula-03-Entendendo o JSX-->
+        <section class="pagina">
+            <header>
+                <h1 class="titulo">Entendendo o JSX </h1>
+            </header>
+            <div class="description">
+                <h2>
+                    O <b>JSX</b> é como um HTML, porém dentro do código JavaScript.<br>
+                    É a principal maneira de excrever HTML com o React.<br>
+                    Podemos <b>interpolar variáveis</b>, inserindo ela entre <b>{}</b>. <br>
+                    É possível também <b>executar funções</b> em JSX.<br>
+                    Inserir <b>valores em atributos de tags</b> também é válido em JSX.<br>
+                    <br>
+                    <b>Aulas Práticas</b>: <br> 
+                    * Abra o projeto que foi criado na última aula, colque esses comandos no terminal; <br>
+                    <br>
+                    Para iniciar o projeto, dentro da pasta dele:<br>
+                     <b>npm start</b>.<br>
+                     <br>
+                    Para encerrar, fechar a conexão clique em: <br>
+                    <b>CRTL</b> + <b>C</b> .<br>
+                    <br>
+                    <b>o HTML DEVE ESTÁ CORRETO!!</b><br>
+                    <br>
+                    Esse é o print do código de como fica a parte do <b>App</b>: <br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula3/print-codigo-app-do-react-modificado.png"
+                         alt="Print do código do react da parte do App.">
+                    </div>
+                    <br>
+                    Repare que no início, temos a importação, no caso desse código está importando o css, <br>
+                    que será usado nessa parte do código.<br>
+                    Já no final do código ele vai exporta o que foi criado, ali.<br>
+                    Veja o print:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula3/print-codigo-app-do-react-modificado-export-import.png" 
+                        alt="Print do código do react, dando destaque eo import e export.">
+                    </div>
+                    <br>
+                    E no meio temos a função, onde criamos muitas coisas entre elas criar outra função,<br>
+                    que vai retorna a configuração que fizermos ali dentro.<br>
+                    <br>
+                    Criando uma variável e fazer a interpolação<br>
+                    * Dentro da <b>function</b> crie uma variável, a minha terá o nome de  "name': <br>
+                    <b>const name = 'Giovani'</b> <br>
+                    <br>
+                    E para chamar essa variável se usa o <b> { } </b>, dentro da function mas na parte de return:<br>
+                    <b>< h3 > Olá, { name }< /h3></b> <br>
+                    <br>
+                    * Assim será exibido na página o nome.<br>
+                    Veja como fica no código:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula3/print-codigo-react-variavel-interpolacao.png" 
+                        alt="Print código react, mostrando a função, a variável e como faz para interpolar.">
+                    </div>
+                    <br>
+                    Pode se usar esse comando por exemplo para processar esse "nome":<br>
+                    // cria uma nova variável <br>
+                    <b>const NewName = name.toUpperCase( );</b> <br>
+                    * Deixará o que estiver dentro da variável name, com as letras maiúsculas.<br>
+                    <br>
+                    // para chamar no html e ser exibido na página<br>
+                    <b>< h3 > Olá, { newName }< /h3></b> <br>
+                    <br>
+                    Executando funcionalidades do JavaScript:<br>
+                    // No return, na  parte da tags, adicione a tag "p"<br>
+                    <b>< p > Soma: { 3+2 } < /p > </b> <br>
+                    <br>
+                    <br>
+                    Podemos criar funcões dentro das funções.<br>
+                    Dentro da function App, crie outra "function", que vai retorna a soma de valores:<br>
+                    <b>function sun(a,b){ <br>
+                    ______return a + b ; <br>
+                    __}<br>
+                    </b>
+                    <br>
+                    Na hora de chamar chamamos a função 'sun' e passamos o valor:<br>
+                    <b>< p > Soma: { sun( 3, 7 ) } < /p > </b> <br>
+                    <br>
+                    <br>
+                    Alterar atributos:<br>
+                    * Vamos alterar uma imagem<br>
+                    // criamos a variável que vai guarda essa imagem<br>
+                    <b>const url = 'https://via.placeholder.com/150';</b> <br>
+                    * neste caso a imagem é para vir da internet, mas pode ser de outro local, pasta.<br>
+                    <br>
+                    // Para ser exibida na página, usando a tag "img"<br>
+                    <b>< img src={ url }     alt="minha imagem" / > </b> <br>
+                    <br>
+                    <br>
+                    <b>Importante:</b> <br>
+                    * Só pode ter um elemento Pai e deve ter, dentro do "return",<br>
+                    veja na imagem do print do código, se não tivesse essa "div" estaria dando erro:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula3/pai-elemento-necessario.png" 
+                        alt="print do código mostrando que tem o pai.">
+                    </div>
+                    <br>
+                    <br>
+                    A palvra <b>class</b> não deve ser usada no React, <br>
+                    use a <b>className</b> essa deve ser usada para fazer as classes.<br>
+                    <br>
+                    <br>
+                </h2>
+            </div>
+        </section>
+        <!--Aula-04-Criando Componentes no React-->
+        <section class="pagina">
+            <header>
+                <h1 class="titulo">Criando Componentes no React </h1>
+            </header>
+            <div class="description">
+                <h2>
+                    Permite <b>dividir a aplicação em partes;</b> <br>
+                    Os componentes <b>renderizam JSX</b>, assim como o App.js (que é um componente);<br>
+                    Precisamos <b>criar um arquivo </b> de componente; <br> 
+                    E <b>importá-lo</b> onde precisamos utilizar.<br>
+                    Normalmente fica em uma pasta chamada <b>components</b> <br>
+                    <br>
+                    Vamos para a prática:<br>
+                    * Dentro da pasta <b>src</b>, crie uma pasta com o nome <b>components</b>, <br>
+                    <br>
+                    *Dentro da pasta "components" crie um arquivo com o nome <b>HelloWorld.js</b> <br>
+                    ** É bom usar sempre letras maiúsculas no inicio das palavras.<br>
+                    <br>
+                    * Com o "HelloWorld" aberto, vamos criar uma <b>function</b> com o mesmo nome.<br>
+                    <b>function HelloWorld( ) </b> <br>
+                    * Já coloque o export:<br>
+                    <b>export default HelloWorld ;</b> .<br>
+                    <br>
+                    * Dentro da function, vamos criar o <b>return</b>:<br>
+                    <b>return (</b> <br>
+                    <br>
+                    <b>)</b><br>
+                    <br>
+                    * Dentro do return, colocamos o <b>HTML</b>:<br>
+                    <b> 
+                    < div > </b>  ->> precisa ter o pai <br>
+                    ____<b>< h1 > meu primeiro componente < /h1 ></b> <br> 
+                    <b>< /div > </b>  <br>
+                    <br>
+                    Veja na imagem como fica o <b>HelloWorld.js</b> <br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula4/print-codigo-meu-primeiro-componente.png" 
+                        alt="print do código, componente helloworld.">
+                    </div>
+                    <br>
+                    Para ele poder aparecer na página, tem que importa onde você quer usá-lo:<br>
+                    * Vai no "App.js" e vamos importa ele lá .<br>
+                    <br>
+                    Com o App.js aberto, na parte de cima importe o "HelloWorld";<br>
+                    <b>import HelloWorld from './components/HelloWorld';</b> <br>
+                    <br>
+                    Agora só adiciona dentro do "return", como uma tag:<br>
+                    <b> < HelloWorld/ > </b> <br>
+                    <br>
+                    Veja como fica o código na hora de importa:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula4/print-import-hello-no-app.png" 
+                        alt="Print do código na hora de importar o HelloWorld.">
+                    </div>
+                    <br>
+                    Um componente tem que ser <b>reutilizavél</b>, ou seja pode ser usado em outro lugares.<br>
+                    * Vamos criar outro componente, com o nome de "Frase".<br>
+                    * O jeito de criar é igual ao componente "HelloWorld".<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula4/print-componente-frase.png" 
+                        alt="print do código do componente frase.">
+                    </div>
+                    <br>
+                    ** O componente "Frase" pode ser reutilizado depois em vários lugares e várias vezes.<br>
+                    Veja na imagem o código:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula4/print-codigo-componente-frase-import-reutilizar.png" 
+                        alt="print do código componente frase, reutilizando várias vezes.">
+                    </div>
+                    <br>
+                    <br>
+                </h2>
+            </div>
+        </section>
+        <!--Aula-05-Trabalhando com Props-->
+        <section class="pagina">
+            <header>
+                <h1 class="titulo"> Trabalhando com Props</h1>
+            </header>
+            <div class="description">
+                <h2>
+                    
+                    <br>
+                    <br>
+                </h2>
+            </div>
+        </section>
     </main>
 </body>
 </html>
