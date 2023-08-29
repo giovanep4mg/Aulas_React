@@ -267,7 +267,78 @@
             </header>
             <div class="description">
                 <h2>
-                    
+                    As <b>props</b> são valores passados para componentes.<br>
+                    Podem ser deixadas <b>dinâmicas</b> , ou seja <b>mudando a execução</b>,<br>
+                    por causa do valor da prop.<br>
+                    O valor é <b>passado como um atributo</b> na chamada do componente.<br>
+                    E precisa ser <b>resgatado dentro de uma propriedade/argumento</b>,<br>
+                    chamada props na função de definição do componente.<br>
+                    As props são somente de leitura.<br>
+                    <br>
+                    Aula prática:<br>
+                    <br>
+                    * No projeto que criamos :<br>
+                    * Na pasta de components, crie um novo componente com o nome:<br>
+                    <b>SayMyName</b> <br>
+                    <br>
+                    Na hora de criar a function passa o argumento <b>props</b>.<br>
+                    Veja como é o código na imagem:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula5/print-codigo-inicio-function-props.png" 
+                        alt="Print código criando a function e adicionando o props.">
+                    </div>
+                    <br>
+                    * Dentro do return, adicione uma div e um paragráfo.<br>
+                    * Dentro do paragráfo você vai colocar assim:<br>
+                    <b>Fala ai { props.name }, suave?</b> <br>
+                    Veja imagem do código:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula5/print-codigo-function-props-divs.png" 
+                        alt="Print código, mostrando a div e o paragráfo, e o texto que deve ser adicionado.">
+                    </div>
+                    <br>
+                    <br>
+                    * Agora para inserir na página:<br>
+                    * No <b>App.js</b> import o SayMyName para poder usar esse componente<br>
+                    E aqui iremos passar o valor do atributo <b>props</b>, que está na esperando receber algo.<br>
+                    <b> < SayMyName nome="Giovani" / > </b> <br>
+                    <br>
+                    Agora na página irá aparecer o texto que está no SayMyName,<br>
+                    com o nome que você adicionar aqui.<br>
+                    <br>
+                    Pode ser passado usando uma variável, você cria a variável e passa no parâmetro.<br>
+                    Veja o código :<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula5/print-codigo-props-passar-variavel.png" 
+                        alt="Print do código, mostrando com passa o valor do atributo usando variável.">
+                    </div>
+                    <br>
+                    <br>
+                    <b>Exemplo usando mais de um props</b> <br>
+                    <br>
+                    * Crie outro componente dentro da pasta <b>components</b>, com o nome:<br>
+                    <b>Pessoa.js</b> <br>
+                    <br>
+                    * Dentro dele crie a "function", desse jeito: <br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula5/print-codigo-function-exemplo2.png" 
+                        alt="Print código function Pessoa, como deve ser feito.">
+                    </div>
+                    <br>
+                    * Para ser inserido na página, import no componente "App.js".<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula5/print-codigo-inserindo-pessoa.png" 
+                        alt="Print código, como inserir na página o Pessoa.js.">
+                    </div>
+                    <br>
+                    <br>
+                    ** Para facilitar ainda mais, podemos fazer algumas modificações, retirar os props:<br>
+                    e adiciona variáveis como atributos.<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula5/print-codigo-function-retirando-os-props.png" 
+                        alt="print do código, mostrando com retirar os props e colocar variáveis.">
+                    </div>
+                    <br>
                     <br>
                     <br>
                 </h2>
