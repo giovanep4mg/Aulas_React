@@ -344,6 +344,55 @@
                 </h2>
             </div>
         </section>
+        <!--Aula-06-Adicionando CSS-->
+        <section class="pagina">
+            <header>
+                <h1 class="titulo"> Adicionando CSS </h1>
+            </header>
+            <div class="description">
+                <h2>
+                    O <b>CSS</b> pode ser <b>adicionado de forma global</b> na aplicação,<br>
+                    por meio de arquivo index.css por exemplo.<br>
+                    <br>
+                    Porém é possivel <b>estilizar a nível de componentes</b>; <br>
+                    Utilizamos o <b>CSS modules</b> para isso;<br>
+                    Basta criar um arquivo como: <b>Componente.module.css</b>, <br>
+                    e chamar esse CSS no componente. <br>
+                    <br>
+                    <br>
+                    <b>Aula prática:</b> <br>
+                    * No arquivo index.css, fica o CSS global que vai configurar todo projeto.<br>
+                    <br>
+                    * Mas pode ser colocado um CSS individual para os componentes,<br>
+                    usando o CSS module.<br>
+                    * Para isso crie um arquivo com o nome que você deseja, e adicione:<br>
+                    <b>module.css</b> <br>
+                    <br>
+                    ** Por exemplo:<b>Frase.module.css</b> <br>
+                    <br>
+                    No arquivo aberto, para criar "classes": <br> 
+                    Não poder ter espaço, deve ser assim:<br>
+                    <b>.fraseContainer</b> <br>
+                    <b>.frase_container</b> <br>
+                    <br>
+                    Veja na imagem o código css da frase.module.css: <br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula6/print-codigo-css-module-frase.png" 
+                        alt="print código css do module frase, como foi feito.">
+                    </div>
+                    <br>
+                    <br>
+                    Agora para adicionar, tem que importa o Frase.module.css no "Frase.js",<br>
+                    depois de importado vamos adicionar as classes, veja na imagem abaixo:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula6/print-importando-css-module.png" 
+                        alt="Print do código, que mostra o arquivo frase.module.css .">
+                    </div> 
+                    <br>
+                    <br>
+                </h2>
+            </div>
+        </section>
     </main>
 </body>
 </html>
