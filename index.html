@@ -393,6 +393,60 @@
                 </h2>
             </div>
         </section>
+        <!--Aula-07-Fragmentos-->
+        <section class="pagina">
+            <header>
+                <h1 class="titulo"> Fragmentos </h1>
+            </header>
+            <div class="description">
+                <h2>
+                    Os <b>react fragments</b> permite a criação de um componente sem elemento pai; <br>
+                    O propósito é <b>descomplicar os nós do DOM</b>.<br>
+                    A sintaxe é <b> < > </b> e <b> < / > </b>, não há um nome para a tag. <br>
+                    Criamos no próprio JSX.<br>
+                    <br>
+                    <br>
+                    <b>Aula prática</b>: <br>
+                    * Crie um novo componente com o nome "List.js", veja na imagem como é:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula7/print-codigo-lista-com-a-div-pai.png" 
+                        alt="Print do código, do arquivo list.js, com a div como elemento pai.">
+                    </div>
+                    <br>
+                    * Depois de criado, vamos adicionar ele no <b>App.js</b>:<br>
+                    // importar a Lista.js <br>
+                    <b>import Lista from './components/Lista';</b> <br>
+                    <br>
+                    // coloque dentro do return, a chamada para usar a Lista.js <br>
+                    <b> < Lista / > </b> <br>
+                    <br>
+                    * Veja como fica a página: <br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula7/print-pagina-como-fica-com-a-div.png" 
+                        alt="Print da página, mostrando como ficou usando a div como elemento pai.">
+                    </div>
+                    <br>
+                    <br>
+                    * Agora vamos usar o <b>fragments</b>, deixar sem a div, somente ele:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula7/print-codigo-lista-sem-a-div-como-pai.png" 
+                        alt="Print código, da lista.js sem usar a div como elemento pai, usando fragments.">
+                    </div>
+                    <br>
+                    <br>
+                    * Na página ficará assim:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula7/print-pagina-como-fica-com-a-div.png" 
+                        alt="Print da página, mostrando como fica depois de usar o fragments.">
+                    </div>
+                    <br>
+                    <br>
+                    Veja que não mudou nada, então para facilitar e quando você precisar, <br>
+                    pode colocar o "fragments" (<b> < > < / >  </b>) como elemento pai.<br>
+                    <br>
+                </h2>
+            </div>
+        </section>
     </main>
 </body>
 </html>
