@@ -447,6 +447,82 @@
                 </h2>
             </div>
         </section>
+        <!--Aula-08-Avançando em props-->
+        <section class="pagina">
+            <header>
+                <h1 class="titulo"> Avançando em props </h1>
+            </header>
+            <div class="description">
+                <h2>
+                   Podemos <b>definir tipos para as props</b>, realizando uma especie de validação.<br>
+                   ** String, number, entre outros tipos<br>
+                   <br>
+                   Definimos em objeto chamado proTypes no próprio componente.<br>
+                   E ainda há possibilidade de <b>definir um valor padrão</b>.<br>
+                   Neste caso utilizamos o objeto <b>defaultProps</b>.<br>
+                   <br>
+                   <br>
+                   <b>Aula prática</b>: <br>
+                   * Crie um componente com o nome "Item.js", como na imagem abaixo:<br>
+                   <div class="imagem">
+                    <img src="./imagens/imagem-aula8/print-componente-Item.png"
+                     alt="Print do componente Item.js">
+                   </div>
+                   <br>
+                   <br>
+                   * Na lista que criamos na aula anterior, tem que importa o "Item",<br>
+                    depois você coloca assim:<br>
+                   <div class="imagem">
+                    <img src="./imagens/imagem-aula8/print-componente-lista.png" 
+                    alt="Print do componente Lista.js ">
+                   </div> 
+                   <br>
+                   <br>
+                   ** Para garantir que seja passado somente strings e numbers,<br>
+                   vamos importa o <b>PropTypes</b> pacote que já vem com o React.<br>
+                   Irá fazer a validação se é string e numbers, que estão sendo passada.<br>
+                   <div class="imagem">
+                    <img src="./imagens/imagem-aula8/print-componente-Item-com-proptypes-string.png" 
+                    alt="print componente Item, usando o PropTypes.">
+                   </div>
+                   <br>
+                   Neste caso está dizendo que a marca é uma string, ou seja, texto,<br>
+                   Se não for uma string, colocar um número, irá dá erro no console:<br>
+                   <div class="imagem">
+                    <img src="./imagens/imagem-aula8/print-pagina-mostrando-os-erros.png" 
+                    alt="Print da página, mostrando os erros que aparece no console.">
+                   </div>
+                   <br>
+                   <br>
+                   ** Pode ser adicionado no código o <b>isRequired</b>, será obrigátorio, <br>
+                   <b>marca: PropTypes.string.isRequired,</b> <br>
+                   <br>
+                   O erro aparecer somente no console, a página abrirá normalmente.<br>
+                   É uma validação a nível de programador, por isso a página funciona normal.<br>
+                   <br>
+                   <br>
+                   <b>DefaultProps</b> <br>
+                   Ele vai deixar uma mensagem dizendo algo, se o "item" não estiver ali,<br>
+                   tipo uma mensagem de erro ou aviso que algo não foi feito corretamente.<br>
+                   <br>
+                   Veja o código como fica:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula8/print-codigo-defaultprops.png" 
+                        alt="print do código , mostrando o código defaultProps.">
+                    </div>
+                    <br>
+                    <br>
+                    Como aparece no navegador o erro, ou a mesagem:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula8/print-pagina-mostrando-aviso-defaultprops.png" 
+                        alt="Print da página, que mostra a mensagem que algo está errado.">
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </h2>
+            </div>
+        </section>
     </main>
 </body>
 </html>
