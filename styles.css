@@ -13,13 +13,28 @@
     div{
         width: 70%;
         height: 70%;
+        display: flexbox;
+    }
+    .menu-navegacao{
+        background-color: rgba(88, 97, 148, 0.415);
+        width: 25%;
+        height: 100%;
+        position: fixed;
+        padding-inline: 30px;
+        max-height: 100vh; /* Define a altura máxima como a altura da viewport */
+        overflow-y: auto;
+        font-family: sans-serif;
+        font-size: 2rem;
     }
 
     .toda-pagina{
         background-color: #dec566;
         border: 1px solid black;
-        width: 100%;
+        width: 75%;
         padding: 1rem;
+        left: 14rem;
+        position: absolute;
+        top: 0rem;
     }
 
     .pagina{
@@ -42,7 +57,14 @@
     }
 
     a{
-        color: cadetblue;
+        color: black;
+        padding: 10px; /* Adiciona 10 pixels de espaço dentro do link */
+        text-decoration: none; /* Remove a sublinhado padrão dos links */
+        display: inline-block; /* Torna os links elementos de bloco em vez de inline (opcional) */
+    }
+    a:hover{
+        color: rgb(236, 240, 225);
+        font-size: 1.3rem;
     }
 
 }
