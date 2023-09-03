@@ -643,6 +643,76 @@
                 </h2>
             </div>
         </section>
+        <!--Aula-11-Passar eventos por props-->
+        <section class="pagina">
+            <header>
+                <h1 class="titulo"> Passar eventos por props </h1>
+            </header>
+            <div class="description">
+                <h2>
+                    Os <b>métodos</b> também podem ser passado por props.<br>
+                    Ou seja, um <b>componente filho pode ativar o método de seu pai</b>.<br>
+                    Vamos acessar o método por meio de um <b>evento</b>.<br>
+                    A sintaxe é a mesma de uma props de dados: <b>props.meuEvento</b>.<br>
+                    <br>
+                    <br>
+                    <b>Aula prática</b>: <br>
+                    <br>
+                    Para nosso projeto ficar mais bonito, crie uma pasta dentro da pasta componente,<br>
+                    com o nome de <b>evento</b> para separar nossos componentes.<br>
+                    <br>
+                    Dentro da pasta, vamos criar um novo componente com o nome <b>Button.js</b>.<br>
+                    Veja como deve ser o componente "Button.js": <br>
+                    <b>Não precisa colocar "( )" por que irá retorna somente uma tag "button"</b> <br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula11/print-componente-Button.png" 
+                        alt="Print do código do componente Button.js">
+                    </div>
+                    <br>
+                    Depois de criado o componente, que vai receber algo do pai <b>props</b>.<br>
+                    Vai no componente que já criamos em outra aula, o componente <b>Evento.js</b>,<br>
+                    vamos importa o "Button" nele:<br>
+                    <div class="imagem">
+                        <img src="" alt="">
+                    </div>
+                    <br>
+                    Agora vamos adicionar um evento no filho <b>Button</b>.<br>
+                    <br>
+                    <b>return < button onClick= { props.event }  > { props.text } < /button > </b> <br>
+                    <br>
+                    No <b>App.js</b>, coloque somente um comando para chamar o evento.<br>
+                    <b> < Evento / > </b> <br>
+                    <br>
+                    <br>
+                    No componente <b>Evento.js</b>, faremos algumas modificações:<br>
+                    Veja na imagem como fica o código: <br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula11/print-codigo-componente-Evento.png" 
+                        alt="Print do código co comonente Evento.js">
+                    </div>
+                    <br>
+                    Veja na página como fica:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula11/print-pagina-mostrando-o-evento-em-acao.png" 
+                        alt="Print da página, mostrando que o evento funcionou direitinho.">
+                    </div>
+                    <br>
+                    <br>
+                    Tem como usar o mesmo Evento, somente modificando as props,<br>
+                    vamos ver como usar o mesmo componente para dois eventos diferentes:<br>
+                    <br>
+                    No componente <b>Evento.js</b>, vamos adicionar outra "function" e outro "button",<br>
+                    com nomes diferentes, mas que executaram o mesmo evento:<br>
+                    Veja como é o código:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula11/print-codigo-componente-Evento-com-dois-eventos.png" 
+                        alt="Print do código do componente Evento.js , mas agora com dois eventos diferentes.">
+                    </div>
+                    <br>
+                    <br>
+                </h2>
+            </div>
+        </section>
     </main>
 </body>
 </html>
