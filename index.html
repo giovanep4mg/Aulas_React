@@ -24,7 +24,7 @@
             <li><a href="#UseState">UseState</a></li>
             <li><a href="#Passar-eventos-por-props">Passar eventos por props</a></li>
             <li><a href="#Renderizaçao-por-condição">Renderizaçao por condição "IF"</a></li>
-            <li><a href="#Fragmentos">Fr</a></li>
+            <li><a href="#Renderizaçao-de-listas"> Renderizaçao de listas </a></li>
             <li><a href="#Fragmentos">Fr</a></li>
         </ul>
     </div>
@@ -837,6 +837,68 @@
                         <img src="./imagens/imagem-aula12/print-pagina-funcao-limpar-email.png" 
                         alt="Print página mostrando a opção para limpar o email.">
                     </div>
+                    <br>
+                    <br>
+                </h2>
+            </div>
+        </section>
+        <!--Aula-13-Renderização de listas-->
+        <section class="pagina" id="Renderizaçao-de-listas">
+            <header>
+                <h1 class="titulo"> Renderização de listas </h1>
+            </header>
+            <div class="description">
+                <h2>
+                    Para renderizar uma lista vamos primeiramente precisar de um <b>array</b>;<br>
+                    Depois utilizamos a <b>função map</b>, para percorre cada um dos itens.<br>
+                    Podendo assim renderizar algo na tela.<br> 
+                    É possível <b>unir operadores condicionais</b> com a renderização de lista.<br>
+                    <br>
+                    <br>
+                    <b>Aula prática</b>:<br>
+                    * Vai no componente "App.js", e pode tirar a tag <b>Condicional</b>,<br>
+                    e mudar o nome do titulo para : "Renderização de listas"<br>
+                    <br>
+                    * Vamos criar uma lista, dentro do componente "App.js"<br>
+                    // A variável irá receber esses nomes.<br>
+                    <b>const meusItens = [ 'React', 'vue', 'Angular' ] </b> <br>
+                    <br>
+                    * Agora vamos criar um novo componente, com o nome de : "OutraLista.js",<br>
+                    dentro dele vamos fazer assim, como está na imagem:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula13/print-codigo-componente-OutraLista.png" 
+                        alt="Print do código do componente OutraLista.js">
+                    </div>
+                    <br>
+                    <br>
+                    Para que ela apareça na página, tem que chamar ele no "App.js",<br>
+                    e adicionar a props:<br>
+                    <b> < OutraLista itens= { meusItens } / > </b> <br>
+                    <br>
+                    <br>
+                    <b>Quando a lista estiver vazia</b> <br>
+                    * Vamos dizer que não foi encontrado nada na lista, então faremos um <b>if</b> e <b>else</b>,<br>
+                    para caso estiver vazia, dá uma resposta ao usuário.<br>
+                    <br>
+                    Vamos fazer algumas modificações no código do componente "OutraLista",
+                    adicionar um if e else, que quando a lista estiver vazia vai exibir uma mensagem:<br>
+                    Veja como fica na imagem o código:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula13/print-codigo-componente-OutraLista-com-IF-e-ELSE.png" 
+                        alt="Print do código, do componente OutraLista.js, com if e else.">
+                    </div>
+                    <br>
+                    <br>
+                    Na hora de chamar, no componente "App.js", só coloca uma lista vazia:<br>
+                    <b> < OutraLista itens= { [ ] } / > </b> <br>
+                    <br>
+                    <br>
+                    Veja como fica a página:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula13/print-pagina-como-fica-usando-a-renderizacao-de-lista.png" 
+                        alt="Print da página, mostrando como ficou depois de usar a renderização de listas.">
+                    </div>
+                    <br>
                     <br>
                     <br>
                 </h2>
