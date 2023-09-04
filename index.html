@@ -23,7 +23,7 @@
             <li><a href="#Eventos-no-React-(onClick-onChange-onSubmit)-parte2">Eventos no React (onClick, onChange, onSubmit) parte 2</a></li>
             <li><a href="#UseState">UseState</a></li>
             <li><a href="#Passar-eventos-por-props">Passar eventos por props</a></li>
-            <li><a href="#Fragmentos">Fr</a></li>
+            <li><a href="#Renderizaçao-por-condição">Renderizaçao por condição "IF"</a></li>
             <li><a href="#Fragmentos">Fr</a></li>
             <li><a href="#Fragmentos">Fr</a></li>
         </ul>
@@ -727,6 +727,115 @@
                     <div class="imagem">
                         <img src="./imagens/imagem-aula11/print-codigo-componente-Evento-com-dois-eventos.png" 
                         alt="Print do código do componente Evento.js , mas agora com dois eventos diferentes.">
+                    </div>
+                    <br>
+                    <br>
+                </h2>
+            </div>
+        </section>
+        <!--Aula-12-Renderização por condição-->
+        <section class="pagina" id="Renderizaçao-por-condição">
+            <header>
+                <h1 class="titulo"> Renderização por condição </h1>
+            </header>
+            <div class="description">
+                <h2>
+                    Podemos atrelar a exibição de algum elementoa um <b>if</b>.<br>
+                    Esta ação é chamada de <b>renderização condicional</b>; <br>
+                    Envolvemos as tags em chaves <b>{ }</b>; <br>
+                    Como as chaves <b>executam JavaScript</b>, criamos nossa condição;<br>
+                    É possível usar o <b>state</b> para criar as condições; <br>
+                    <br>
+                    <br>
+                    <b>Aula prática</b>:<br>
+                    * No componente "App.js" pode deixar apenas o "h1", escrito assim:<br>
+                    <b>Renderização condicional</b> <br>
+                    <br>
+                    * Vamos criar um novo componente, com o nome de:<br>
+                    <b>Condicional.js</b> <br>
+                    <br>
+                    * Criaremos um formulário básico, veja na imagem o código:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-simples.png" 
+                        alt="Print do código do componente Condicional.js">
+                    </div>
+                    <br>
+                    * Para ele aparecer na página, deve ser chamado no componente "App.js".<br>
+                    <br>
+                    Agora iremos adicionar o "useState", importando no componente <b>Condicional.js</b>;<br>
+                    Criando duas variáveis:<br>
+                    <b>const [ email, setEmail ] = useState( ) </b> <br>
+                    <br>
+                    Para seta o "email", vamos usar o <b>onChange</b>;<br>
+                    Vamos adicionar ele na tag "input", ficando assim:<br>
+                    <b>onChange={ (e) => setEmail(e.target.value) } </b> <br> 
+                    <br>
+                    Mas queremos manipular esse email como se fosse email do usuário;<br>
+                    Para vamos criar outro "state":<br>
+                    <b>const [ userEmail, setUserEmail ] = useState( ) </b> <br>
+                    <br>
+                    Vamos criar um método que quando o usuário clicar o email seja o userEmail;<br>
+                    No "function enviarEmail", vamos apagar o "console.log" e colocar assim:<br>
+                    <b>setUserEmail(email)</b> <br>
+                    <br>
+                    Para saber se deu certo, vamos colocar abaixo do button, assim:<br>
+                    <b>{ userEmail }</b> <br>
+                    <br>
+                    Veja como fica todo o código na imagem:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-com-useState.png" 
+                        alt="Print do código do componente Condicional.js, usando o useState.">
+                    </div>
+                    <br>
+                    <br>
+                    Na página deve aparecer assim:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula12/print-pagina-usando-useState.png" 
+                        alt="Print da página depois de usar o useState.">
+                    </div>
+                    <br>
+                    <br>
+                    Agora podemos fazer uma verificação nesse "email";<br>
+                    Se for "verdadeiro" será adicionado outra "div":<br>
+                    Para isso, onde adicionamos o <b>{ userEmail }</b>, abaixo do button,<br>
+                    vamos adicionar isso:<br>
+                    <b>{ userEmail && ( </b> <br>
+                    __<b> < div > </b> <br>
+                    ______<b> < p > O email do usuário é: { userEmail } < /p > </b> <br>
+                    __<b> < /div > </b> <br>
+                    <b>)}</b> <br>
+                    <br>
+                    Veja o código como fica depois dessa atualização:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-com-useState-fazendo-verificacao.png" 
+                        alt="Print código Componente Condicional, fazendo a verificação no email do usuário.">
+                    </div>
+                    <br>
+                    <br>
+                    Veja na página como fica agora:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula12/print-pagina-fazendo-a-verificacao.png" 
+                        alt="Print da página depois de fazer a verificação.">
+                    </div>
+                    <br>
+                    Podemos fazer um outro evento para limpar o email,<br>
+                    fazendo a alteração nessa mesma "div":<br>
+                    Para isso, basta adicionar um button dentro da verificação, abaixo do "p":<br>
+                    <b> < button onClick = { limparEmail } > Limpar email < /button > </b> <br>
+                    <br>
+                    Agora criamos uma "function" que deixará vazio o "setUserEmail":<br>
+                    <b>setUserEmail ( ' ' ) </b> <br>
+                    <br>
+                    Veja o código como fica agora:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-Limpando-email.png" 
+                        alt="Print do código componente, agora com a função de limmpar o email.">
+                    </div>
+                    <br>
+                    Veja como aparece na página: <br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula12/print-pagina-funcao-limpar-email.png" 
+                        alt="Print página mostrando a opção para limpar o email.">
                     </div>
                     <br>
                     <br>
