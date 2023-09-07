@@ -25,7 +25,7 @@
             <li><a href="#Passar-eventos-por-props">Passar eventos por props</a></li>
             <li><a href="#Renderizaçao-por-condição">Renderizaçao por condição "IF"</a></li>
             <li><a href="#Renderizaçao-de-listas"> Renderizaçao de listas </a></li>
-            <li><a href="#Fragmentos">Fr</a></li>
+            <li><a href="#state-lift"> State lift </a></li>
         </ul>
     </div>
     <main class="toda-pagina">
@@ -901,6 +901,68 @@
                     <br>
                     <br>
                     <br>
+                </h2>
+            </div>
+        </section>
+        <!--Aula-14-State Lift-->
+        <section class="pagina" id="state-lift">
+            <header>
+                <h1 class="titulo"> State Lift </h1>
+            </header>
+            <div class="description">
+                <h2>
+                    <b>State Lift</b> é uma tecnica ultilizada para compartilhar o state.<br>
+                    É normal vários componentes <b>dependerem do mesmo estado</b>;<br>
+                    Então precisamos elevar o nível do mesmo a um <b>componente pai</b>;<br>
+                    Então centralizamos o state no pai, e <b>definimos quem usa e quem define </b> (setState) <br>
+                    <br>
+                    <br>
+                    <b>Aula prática</b>: <br>
+                    * Tire algumas coisas, do componente "App.js", deixe somente o titulo:<br>
+                    <b>State Lift</b> <br>
+                    <br>
+                    * Agora vamos criar um novo componente, com o nome: <br>
+                    <b>SeuNome.js</b> <br>
+                    Veja na imagem como é o código:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula14/print-codgo-componente-SeuNome.png" 
+                        alt="Print do código do componente SeuNome.js">
+                    </div>
+                    <br>
+                    * Para aplicar o recurso "State Lift", vamos adicionar no componente "pai",<br>
+                    que no nosso caso está sendo o componente <b>App.js</b>, mas poderia ser outro.<br>
+                    <br>
+                    Veja o código como deve ser feito:<br>
+                    <div>
+                        <img src="./imagens/imagem-aula14/print-codigo-app-componente-pai.png" 
+                        alt="Print código do componente App.js, que será o componente pai.">
+                    </div>
+                    <br>
+                    <br>
+                    * Para passar o nome, que vai está no filho para o pai,<br>
+                    faremos uma modificação no código do componente <b>SeuNome.js</b>:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula14/print-codigo-componente-SeuNome-diferente.png" 
+                        alt="Print doo código do componente SeuNome.js, atualizado para receber">
+                    </div>
+                    <br>
+                    <br>
+                    * Vamos utilizar esse dado de outra forma.<br>
+                    * Crie outro componente com o nome <b>Saudacao</b> que vai receber o dado do "State",<br>
+                    e fazer uma verificação se tiver um nome vai exibir uma saudação.<br>
+                    <br>
+                    Veja como é o código do componente <b>Saudacao.js</b>:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula14/print-codigo-componente-Saudacao.png" 
+                        alt="Print do código do componente Saudacao.js, mostrando como deve ficar.">
+                    </div>
+                    <br>
+                    <br>
+                    Agora veja na imagem abaixo, como deve ficar sua página:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula14/print-da-pagina-mostrando-como-ficou-depois-de-usar-o-state-lift.png" 
+                        alt="">
+                    </div>
                 </h2>
             </div>
         </section>
