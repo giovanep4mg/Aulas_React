@@ -26,6 +26,11 @@
             <li><a href="#Renderizaçao-por-condição">Renderizaçao por condição "IF"</a></li>
             <li><a href="#Renderizaçao-de-listas"> Renderizaçao de listas </a></li>
             <li><a href="#state-lift"> State lift </a></li>
+            <li><a href="#react-icons"> React Icons </a></li>
+            <br>
+            <br>
+            <br>
+            <br>
         </ul>
     </div>
     <main class="toda-pagina">
@@ -963,6 +968,80 @@
                         <img src="./imagens/imagem-aula14/print-da-pagina-mostrando-como-ficou-depois-de-usar-o-state-lift.png" 
                         alt="">
                     </div>
+                    <br>
+                    <br>
+                </h2>
+            </div>
+        </section>
+         <!--Aula-15-React Icons-->
+         <section class="pagina" id="react-icons">
+            <header>
+                <h1 class="titulo"> React Icons </h1>
+            </header>
+            <div class="description">
+                <h2>
+                    O <b>React Icons</b> é um pacote de icones externo; <br>
+                    Precisamos <b>adicionar ao projeto atráves do npm</b>; <br>
+                    Ele nos permite adicionar icones ao projeto com uma, <br>
+                    <b>sintaxe parecida a de um componente</b>; <br>
+                    Além disso <b>há uma grande quantidade de icons</b> disponivéis; <br>
+                    <br>
+                    <br>
+                    <b>Aula prática</b>: <br>
+                    * Vamos no site dá uma olhada no React Icons, só pesquisar no google.<br>
+                    <a href="https://react-icons.github.io/react-icons/">React Icons</a> <br>
+                    <br>
+                    <br>
+                    * Vamos instalar o React Icons, se o projeto tiver ativo, desativa ele,<br>
+                    no pront de comando coloque o <b>Ctrl + C </b>, vai fechar o projeto. <br>
+                    <br>
+                    * Agora vamos instalar o pacote do React Icons, no pront de comando coloque:<br>
+                    <b>npm install react-icons</b> e dê enter.<br>
+                    <br>
+                    * Vamos adicionar icons no componente <b>Footer.js</b>; <br>
+                    Vamos adicionar icon das redes socias. <br>
+                    * Dentro do componente "Footer.js", vamos importa os icons:<br>
+                    // Importando os iconis de Facebook, Instagram e Linkedin:<br>
+                    <b>import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa' ;</b> <br>
+                    <br>
+                    Adicionamos dentro do return:<br>
+                    Criamos uma lista, com a tag "ul" e dentro das "li" adicionar os icons;<br>
+                    <br>
+                    * Executamos o projeto, no pront de comando usando o <b>npm start</b> <br>
+                    <br>
+                    <br>
+                    Veja como fica o código, no componente "Footer.js":<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-componente-Footer-usando-icons.png" 
+                        alt="Print do componente Footer.js, mostrando a importação e o uso do icons.">
+                    </div>
+                    <br>
+                    <br>
+                    Agora vamos criar um style, o CSS para o componente Footer.js, <br>
+                    para isso vamos criar um CSS Módule, dentro da pasta "layout":<br>
+                    <b>Footer.module.css</b> <br>
+                    E dentro dela vamos criar os estilos.<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-componente-Footer-module-css.png" 
+                        alt="Print do componente Footer module css, com os estilos que serão adicionados no componente">
+                    </div>
+                    <br>
+                    <br>
+                    * Agora vamos importa os estilos no Footer.js, e adicionar as classes:<br>
+                    Veja na imagem como fica o código: <br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-componente-Footer-adicionando-estilos-css-module-classes.png" 
+                        alt="print do componente Foote.js, adicionando os estilos e classes.">
+                    </div>
+                    <br>
+                    <br>
+                    Veja na página como fica:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-da-pagina-como-fica-depois-de-adicionar-os-icons.png" 
+                        alt="Print da página, mostrando como fica depois de usar os icons e seu estilo.">
+                    </div>
+                    <br>
+                    <br>
                 </h2>
             </div>
         </section>
