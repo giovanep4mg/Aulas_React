@@ -971,6 +971,211 @@
                 </h2>
             </div>
         </section>
+        <!--Aula-15-React Router-->
+        <section class="pagina" id="React-Router">
+            <header>
+                <h1 class="titulo"> React Router</h1>
+            </header>
+            <div class="description">
+                <h2>
+                    O <b>React Router</b> é um pacote para mudança de URLs da apllicação;<br>
+                    Podemos assim acessar outras views, <b>sem o page reload</b>;<br>
+                    <b>Trocando apenas uma parte do layout da aplicação</b>, ou seja, o que muda de view para view.<br>
+                    Precisamos <b>instalar esse pacote</b> no projeto;<br>
+                    E também realizar algumas mudanças em como o App é estruturado;<br>
+                    <br>
+                    <br>
+                    <b>Aula prática</b>: <br>
+                    * Primeiro passo é instalar o pacote, no pront de comando,<br>
+                    Verifique se você está dentro da pasta do projeto, coloque:<br>
+                    <b>npm install react-router-dom</b> e dê enter para instalar...<br>
+                    <br>
+                    * Vamos limpar o componente "App.js", deixando ele como na imagem abaixo:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-código-app-limpo.png" 
+                        alt="Print do componente App.js, sem nada para começar a usar o router-DOM.">
+                    </div>
+                    <br>
+                    * Depois disso vamos usar uma série de componentes do react-Dom,<br>
+                    vamos importa eles no App.js.<br>
+                    <b>import { BrowserRouter as Router, Route, Link } from 'react-router-dom'</b> <br>
+                    <br>
+                    * Depois iremos envolver toda nossa aplicação em <b>Router</b>,<br>
+                    Dentro dele, criamos uma barra de navegação, com links para as páginas.<br>
+                    Para isso criamos uma tag <b>ul</b> dentro dela <b>li</b> e dentro da <b>li</b>:
+                    <br>
+                    Usaremos o <b>Link</b> que importamos que será como a tag "a",<br>
+                    dentro do Link ao invés de usar o "href" usaremos o <b>to=""</b>;<br>
+                    <br>
+                    Vamos cria o link para  página "Home", colocando assim:<br>
+                    <b> < Link to="/" > Home < /Link > </b> <br>
+                    <br>
+                    Depois criaremos mais dois links, para outras páginas.<br>
+                    Veja o código do App.js, como fica:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-código-app-definindo-Router-Links.png" 
+                        alt="Print do componente App.js, com as Router e Links, mas falta definir outras coisas ainda.">
+                    </div>
+                    <br>
+                    <br>
+                    <b>Criar as páginas Home, Empresa.js e Contato.js</b>: <br>
+                    * Dentro da pasta <b>components</b>, crie uma nova pasta com o nome de <b>pages</b>, <br>
+                    dentro dela crie um novo componente com o nome "Home.js", como na imagem:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-componente-Home.png" 
+                        alt="Print do componente Home.js .">
+                    </div>
+                    <br>
+                    * Os outros componentes serão praticamentes iguais, basta copiar do Home.js <br>
+                    modifique somente o nome deles, colocando: Empresa, Contato.<br>
+                    <br>
+                    <br>
+                    * Agora precisamos configurar o App.js, para poder ter acesso as páginas que criamos.<br>
+                    Para isso vamos usar o <b>Routes</b> e declarar nossas rotas;<br>
+                    Veja o código como deve ficar na imagem abaixo:
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-código-app-definindo-Routes-as-rotas-dos-links.png" 
+                        alt="Print do componente App.js, mostrando como usar o Routes para definir as rotas doa links.">
+                    </div>
+                    <br>
+                    <br>
+                    * Para deixar melhor nosso projeto, vamos criar um componente de menu de navegação.<br>
+                    * Na pasta "components" crie um com o nome: <b>Navbar</b>, copie a tag "ul", <br>
+                    e coloque dentro desse novo componente.<br>
+                    Veja na imagem como fica:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-componente-Navbar.png" 
+                        alt="Print do componente Navbar.js, mostrando como foi feito o código.">
+                    </div>
+                    <br>
+                    * Agora modificamos o componente <b>App.js</b>, tirando as tags "ul e li",<br>
+                    e importando o componente "Navbar.js" e colando ele no lugar das tags.<br>
+                    Veja na imagem como fica:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-código-App-usando-a-Navbar.png" 
+                        alt="Print do componente App.js, usando o componente Navbar.js e sem as tags ul e li.">
+                    </div>
+                    <br>
+                    <br>
+                    * Podemos também já criar o componente <b>Footer.js</b>, que é o Rodapé da página,<br>
+                    crie uma nova pasta com o nome "layout" dentro dela, coloque o componente,<br>
+                    "Navbar.js" e crie o <b>Footer.js</b> .<br> 
+                    Veja como será:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-componete-Footer.png" 
+                        alt="Print do componente Footer.js">
+                    </div>
+                    <br>
+                    * Basta adicionar ele no componente "App.js", no final do <b>Routes</b>,<br>
+                    e importa ele no começo.<br>
+                    Veja como fica o componente "App.js" agora finalizado:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-código-App-finalizado.png" 
+                        alt="Print do componente App.js, agora finalizado.">
+                    </div>
+                    <br>
+                    <br>
+                    * Agora para melhorar ainda mais, vamos adicionar um <b>CSS Module</b>,<br>
+                    no componente "Navbar.js".<br>
+                    * Dentro da pasta "layout", cria um css module assim:<br>
+                    <b>Navbar.module.css</b> <br>
+                    Veja como será:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-Navbar-module-css.png" 
+                        alt="Print do Navbar.module.css">
+                    </div>
+                    <br>
+                    <br>
+                    * Para usar no componente "Navbar" temos que importa e criar as classes:<br>
+                    Veja na imagem como fica o componente <b>Navbar.js</b>:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-componente-Navbar-finalizado.png" 
+                        alt="Print do componente Navbar.js, finalizado com tudo certo.">
+                    </div>
+                    <br>
+                    <br>
+                    Veja como fica a página depois de tudo isso:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-pagina-finalizada-react-router-dom.png" 
+                        alt="Print da página depois de realizado tudo o que foi visto sobre react-router-Dom">
+                    </div>
+                    <br>
+                    <br>
+                </h2>
+            </div>
+        </section>
+        <!--Aula-16-React Icons-->
+        <section class="pagina" id="react-icons">
+            <header>
+                <h1 class="titulo"> React Icons </h1>
+            </header>
+            <div class="description">
+                <h2>
+                    O <b>React Icons</b> é um pacote de icones externo; <br>
+                    Precisamos <b>adicionar ao projeto atráves do npm</b>; <br>
+                    Ele nos permite adicionar icones ao projeto com uma, <br>
+                    <b>sintaxe parecida a de um componente</b>; <br>
+                    Além disso <b>há uma grande quantidade de icons</b> disponivéis; <br>
+                    <br>
+                    <br>
+                    <b>Aula prática</b>: <br>
+                    * Vamos no site dá uma olhada no React Icons, só pesquisar no google.<br>
+                    <a href="https://react-icons.github.io/react-icons/">React Icons</a> <br>
+                    <br>
+                    <br>
+                    * Vamos instalar o React Icons, se o projeto tiver ativo, desativa ele,<br>
+                    no pront de comando coloque o <b>Ctrl + C </b>, vai fechar o projeto. <br>
+                    <br>
+                    * Agora vamos instalar o pacote do React Icons, no pront de comando coloque:<br>
+                    <b>npm install react-icons</b> e dê enter.<br>
+                    <br>
+                    * Vamos adicionar icons no componente <b>Footer.js</b>; <br>
+                    Vamos adicionar icon das redes socias. <br>
+                    * Dentro do componente "Footer.js", vamos importa os icons:<br>
+                    // Importando os iconis de Facebook, Instagram e Linkedin:<br>
+                    <b>import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa' ;</b> <br>
+                    <br>
+                    Adicionamos dentro do return:<br>
+                    Criamos uma lista, com a tag "ul" e dentro das "li" adicionar os icons;<br>
+                    <br>
+                    * Executamos o projeto, no pront de comando usando o <b>npm start</b> <br>
+                    <br>
+                    <br>
+                    Veja como fica o código, no componente "Footer.js":<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-componente-Footer-usando-icons.png" 
+                        alt="Print do componente Footer.js, mostrando a importação e o uso do icons.">
+                    </div>
+                    <br>
+                    <br>
+                    Agora vamos criar um style, o CSS para o componente Footer.js, <br>
+                    para isso vamos criar um CSS Módule, dentro da pasta "layout":<br>
+                    <b>Footer.module.css</b> <br>
+                    E dentro dela vamos criar os estilos.<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-componente-Footer-module-css.png" 
+                        alt="Print do componente Footer module css, com os estilos que serão adicionados no componente">
+                    </div>
+                    <br>
+                    <br>
+                    * Agora vamos importa os estilos no Footer.js, e adicionar as classes:<br>
+                    Veja na imagem como fica o código: <br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-componente-Footer-adicionando-estilos-css-module-classes.png" 
+                        alt="print do componente Foote.js, adicionando os estilos e classes.">
+                    </div>
+                    <br>
+                    <br>
+                    Veja na página como fica:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula15/print-da-pagina-como-fica-depois-de-adicionar-os-icons.png" 
+                        alt="Print da página, mostrando como fica depois de usar os icons e seu estilo.">
+                    </div>
+                    <br>
+                    <br>
+                </h2>
+            </div>
+        </section>
         <br>
         <br>
     </main>
