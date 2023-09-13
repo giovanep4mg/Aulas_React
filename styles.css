@@ -140,13 +140,13 @@
         display: flexbox;
     }
     .menu-navegacao{
-        width: 24%;
+        width: 20%;
         line-height: 2.5rem;
     }
 
     .toda-pagina{
-        left: 11.5rem;
-        width: 75%;
+        left: 12rem;
+        width: 80%;
     }
 
    
