@@ -270,8 +270,9 @@
         display: flexbox;
     }
     .menu-navegacao{
-        width: 25%;
+        width: 20%;
         line-height: 2rem;
+        padding-bottom: 49rem;
     }
 
     .toda-pagina{
@@ -307,7 +308,7 @@
         box-sizing: border-box;
 
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     div{
@@ -316,16 +317,14 @@
         display: flexbox;
     }
     .menu-navegacao{
-        width: 20%;
-        line-height: 2.5rem;
+        display: none;
     }
 
     .toda-pagina{
-        left: 7rem;
-        width: 165%;
+        left: 0rem;
+        width: 100%;
+        padding: 0px;
     }
-
-   
 
     .titulo{
         font-size: 2.8rem;
@@ -333,7 +332,7 @@
         text-align: center;
     }
     .imagem{
-        width: 75%;
+        width: 100%;
     }
 
     a{

@@ -8,7 +8,8 @@
     <title>O que é React</title>
 </head>
 <body>
-    <div class="menu-navegacao">
+    <main>
+        <div class="menu-navegacao">
         <h1>Menu</h1>
         <br>
         <ul>
@@ -48,1153 +49,1154 @@
             <br>
             <br>
         </ul>
-    </div>
-    <main class="toda-pagina">
-        <!--Aula-01-Introdução-->
-        <section class="pagina" id="O-que-e-react">
-            <header>
-                <h1 class="titulo">O que é React</h1>
-            </header>
-            <div class="description" >
-                <h2>
-                    Uma <b>biblioteca js</b> para criação de interfaces.<br>
-                    Utilizado para construir <b>SPAs</b> (Single Page Application).<br>
-                    Baseado em <b>componentes</b>.<br>
-                    Utiliza o <b>JSX</b> para renderizar o html.<br>
-                    E aplica o <b>Virtual Dom</b> para realizar as alterações de Dom.<br>
-                    Podemos <b>Adicionar a um projeto</b> ou criar um projeto com ele.<br>
+        </div>
+        <section class="toda-pagina">
+            <!--Aula-01-Introdução-->
+            <section class="pagina" id="O-que-e-react">
+                <header>
+                    <h1 class="titulo">O que é React</h1>
+                </header>
+                <div class="description" >
+                    <h2>
+                        Uma <b>biblioteca js</b> para criação de interfaces.<br>
+                        Utilizado para construir <b>SPAs</b> (Single Page Application).<br>
+                        Baseado em <b>componentes</b>.<br>
+                        Utiliza o <b>JSX</b> para renderizar o html.<br>
+                        E aplica o <b>Virtual Dom</b> para realizar as alterações de Dom.<br>
+                        Podemos <b>Adicionar a um projeto</b> ou criar um projeto com ele.<br>
+                        <br>
+                        Site do React, e lá você tem acesso a sua documentação:<br>
+                        <a href="https://create-react-app.dev/">create-react.app</a>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-02-Instalando o React-->
+            <section class="pagina" id="instalando-o-react">
+                <header>
+                    <h1 class="titulo">Instalando o React</h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        Para instalar o React vamos utilizar uma ferramenta chamada <b>Create React App</b>.<br>
+                        Recebemos todos os arquivos da biblioteca <b>e temos como executá-la</b>.<br>
+                        Para utilizar precisamos do <b>Node e também npm</b>.<br>
+                        Essa ferramenta também otimiza o app gerado para <b>produção</b>.<br>
+                        E aplica o <b>Virtual Dom</b> para realizar as alterações de Dom.<br>
+                        É possível iniciar a aplicação com  <b>npm start</b>.<br>
+                        <br>
+                        <b>Como criar seu primeiro projeto em React</b>: <br>
+                        * tem que ter instalado o Node e o npm no seu computador.<br>
+                        <br>
+                        Com o VScode aberto, já na pasta que você vai criar esse projeto.<br>
+                        <br>
+                        Abra o terminal, e coloque esse comando:<br>
+                        <b>npx create-react-app meu-projeto</b>  e clique em enter,<br>
+                        pode demorar um pouco para instalar.<br>
+                        <br>
+                        Depois de instalado vai te dá algumas informações, como;<br>
+                        <b>npm start</b> Para inicializar o projeto onde vamos trabalhar.<br>
+                        <b>npm run build</b> Para gerar o build do projeto.<br>
+                        <br>
+                        // Para iniciar o projeto que criamos, tem que primeiro ir até a pasta do projeto:<br>
+                        <b>cd meu-projeto</b> Para você entra na pasta do projeto que foi criado.<br>
+                        <br>
+                        // Para o projeto rodar, inicializar:<br>
+                        <b>npm start</b> <br> <br>
+                        <br>
+                        Vai executar seu navegador automaticamente, se não, você veja os links que serão gerados e clica em um deles.<br>
+                        Irá abrir essa página no seu navegador :<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem_Index/print-do-navegador-quando-inicializa-o-react.png"
+                            alt="Print da tela do navegador depois que inicia o projeto usando o npm start.">
+                        </div>
+                        <br>
+                        Veja os arquivos que ele criou no VScode:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem_Index/print-arquivos-criado-no-inicio-meu-projeto.png" 
+                            alt="print do VScode dos arquivos que foram criados.">
+                        </div>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-03-Entendendo o JSX-->
+            <section class="pagina" id="Entendo-o-JSX">
+                <header>
+                    <h1 class="titulo">Entendendo o JSX </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        O <b>JSX</b> é como um HTML, porém dentro do código JavaScript.<br>
+                        É a principal maneira de excrever HTML com o React.<br>
+                        Podemos <b>interpolar variáveis</b>, inserindo ela entre <b>{}</b>. <br>
+                        É possível também <b>executar funções</b> em JSX.<br>
+                        Inserir <b>valores em atributos de tags</b> também é válido em JSX.<br>
+                        <br>
+                        <b>Aulas Práticas</b>: <br> 
+                        * Abra o projeto que foi criado na última aula, colque esses comandos no terminal; <br>
+                        <br>
+                        Para iniciar o projeto, dentro da pasta dele:<br>
+                        <b>npm start</b>.<br>
+                        <br>
+                        Para encerrar, fechar a conexão clique em: <br>
+                        <b>CRTL</b> + <b>C</b> .<br>
+                        <br>
+                        <b>o HTML DEVE ESTÁ CORRETO!!</b><br>
+                        <br>
+                        Esse é o print do código de como fica a parte do <b>App</b>: <br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula3/print-codigo-app-do-react-modificado.png"
+                            alt="Print do código do react da parte do App.">
+                        </div>
+                        <br>
+                        Repare que no início, temos a importação, no caso desse código está importando o css, <br>
+                        que será usado nessa parte do código.<br>
+                        Já no final do código ele vai exporta o que foi criado, ali.<br>
+                        Veja o print:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula3/print-codigo-app-do-react-modificado-export-import.png" 
+                            alt="Print do código do react, dando destaque eo import e export.">
+                        </div>
+                        <br>
+                        E no meio temos a função, onde criamos muitas coisas entre elas criar outra função,<br>
+                        que vai retorna a configuração que fizermos ali dentro.<br>
+                        <br>
+                        Criando uma variável e fazer a interpolação<br>
+                        * Dentro da <b>function</b> crie uma variável, a minha terá o nome de  "name': <br>
+                        <b>const name = 'Giovani'</b> <br>
+                        <br>
+                        E para chamar essa variável se usa o <b> { } </b>, dentro da function mas na parte de return:<br>
+                        <b>< h3 > Olá, { name }< /h3></b> <br>
+                        <br>
+                        * Assim será exibido na página o nome.<br>
+                        Veja como fica no código:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula3/print-codigo-react-variavel-interpolacao.png" 
+                            alt="Print código react, mostrando a função, a variável e como faz para interpolar.">
+                        </div>
+                        <br>
+                        Pode se usar esse comando por exemplo para processar esse "nome":<br>
+                        // cria uma nova variável <br>
+                        <b>const NewName = name.toUpperCase( );</b> <br>
+                        * Deixará o que estiver dentro da variável name, com as letras maiúsculas.<br>
+                        <br>
+                        // para chamar no html e ser exibido na página<br>
+                        <b>< h3 > Olá, { newName }< /h3></b> <br>
+                        <br>
+                        Executando funcionalidades do JavaScript:<br>
+                        // No return, na  parte da tags, adicione a tag "p"<br>
+                        <b>< p > Soma: { 3+2 } < /p > </b> <br>
+                        <br>
+                        <br>
+                        Podemos criar funcões dentro das funções.<br>
+                        Dentro da function App, crie outra "function", que vai retorna a soma de valores:<br>
+                        <b>function sun(a,b){ <br>
+                        ______return a + b ; <br>
+                        __}<br>
+                        </b>
+                        <br>
+                        Na hora de chamar chamamos a função 'sun' e passamos o valor:<br>
+                        <b>< p > Soma: { sun( 3, 7 ) } < /p > </b> <br>
+                        <br>
+                        <br>
+                        Alterar atributos:<br>
+                        * Vamos alterar uma imagem<br>
+                        // criamos a variável que vai guarda essa imagem<br>
+                        <b>const url = 'https://via.placeholder.com/150';</b> <br>
+                        * neste caso a imagem é para vir da internet, mas pode ser de outro local, pasta.<br>
+                        <br>
+                        // Para ser exibida na página, usando a tag "img"<br>
+                        <b>< img src={ url }     alt="minha imagem" / > </b> <br>
+                        <br>
+                        <br>
+                        <b>Importante:</b> <br>
+                        * Só pode ter um elemento Pai e deve ter, dentro do "return",<br>
+                        veja na imagem do print do código, se não tivesse essa "div" estaria dando erro:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula3/pai-elemento-necessario.png" 
+                            alt="print do código mostrando que tem o pai.">
+                        </div>
+                        <br>
+                        <br>
+                        A palvra <b>class</b> não deve ser usada no React, <br>
+                        use a <b>className</b> essa deve ser usada para fazer as classes.<br>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-04-Criando Componentes no React-->
+            <section class="pagina" id="Criando-componentes-no-React">
+                <header>
+                    <h1 class="titulo">Criando Componentes no React </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        Permite <b>dividir a aplicação em partes;</b> <br>
+                        Os componentes <b>renderizam JSX</b>, assim como o App.js (que é um componente);<br>
+                        Precisamos <b>criar um arquivo </b> de componente; <br> 
+                        E <b>importá-lo</b> onde precisamos utilizar.<br>
+                        Normalmente fica em uma pasta chamada <b>components</b> <br>
+                        <br>
+                        Vamos para a prática:<br>
+                        * Dentro da pasta <b>src</b>, crie uma pasta com o nome <b>components</b>, <br>
+                        <br>
+                        *Dentro da pasta "components" crie um arquivo com o nome <b>HelloWorld.js</b> <br>
+                        ** É bom usar sempre letras maiúsculas no inicio das palavras.<br>
+                        <br>
+                        * Com o "HelloWorld" aberto, vamos criar uma <b>function</b> com o mesmo nome.<br>
+                        <b>function HelloWorld( ) </b> <br>
+                        * Já coloque o export:<br>
+                        <b>export default HelloWorld ;</b> .<br>
+                        <br>
+                        * Dentro da function, vamos criar o <b>return</b>:<br>
+                        <b>return (</b> <br>
+                        <br>
+                        <b>)</b><br>
+                        <br>
+                        * Dentro do return, colocamos o <b>HTML</b>:<br>
+                        <b> 
+                        < div > </b>  ->> precisa ter o pai <br>
+                        ____<b>< h1 > meu primeiro componente < /h1 ></b> <br> 
+                        <b>< /div > </b>  <br>
+                        <br>
+                        Veja na imagem como fica o <b>HelloWorld.js</b> <br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula4/print-codigo-meu-primeiro-componente.png" 
+                            alt="print do código, componente helloworld.">
+                        </div>
+                        <br>
+                        Para ele poder aparecer na página, tem que importa onde você quer usá-lo:<br>
+                        * Vai no "App.js" e vamos importa ele lá .<br>
+                        <br>
+                        Com o App.js aberto, na parte de cima importe o "HelloWorld";<br>
+                        <b>import HelloWorld from './components/HelloWorld';</b> <br>
+                        <br>
+                        Agora só adiciona dentro do "return", como uma tag:<br>
+                        <b> < HelloWorld/ > </b> <br>
+                        <br>
+                        Veja como fica o código na hora de importa:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula4/print-import-hello-no-app.png" 
+                            alt="Print do código na hora de importar o HelloWorld.">
+                        </div>
+                        <br>
+                        Um componente tem que ser <b>reutilizavél</b>, ou seja pode ser usado em outro lugares.<br>
+                        * Vamos criar outro componente, com o nome de "Frase".<br>
+                        * O jeito de criar é igual ao componente "HelloWorld".<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula4/print-componente-frase.png" 
+                            alt="print do código do componente frase.">
+                        </div>
+                        <br>
+                        ** O componente "Frase" pode ser reutilizado depois em vários lugares e várias vezes.<br>
+                        Veja na imagem o código:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula4/print-codigo-componente-frase-import-reutilizar.png" 
+                            alt="print do código componente frase, reutilizando várias vezes.">
+                        </div>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-05-Trabalhando com Props-->
+            <section class="pagina" id="Trabalhando-com-props">
+                <header>
+                    <h1 class="titulo"> Trabalhando com Props</h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        As <b>props</b> são valores passados para componentes.<br>
+                        Podem ser deixadas <b>dinâmicas</b> , ou seja <b>mudando a execução</b>,<br>
+                        por causa do valor da prop.<br>
+                        O valor é <b>passado como um atributo</b> na chamada do componente.<br>
+                        E precisa ser <b>resgatado dentro de uma propriedade/argumento</b>,<br>
+                        chamada props na função de definição do componente.<br>
+                        As props são somente de leitura.<br>
+                        <br>
+                        Aula prática:<br>
+                        <br>
+                        * No projeto que criamos :<br>
+                        * Na pasta de components, crie um novo componente com o nome:<br>
+                        <b>SayMyName</b> <br>
+                        <br>
+                        Na hora de criar a function passa o argumento <b>props</b>.<br>
+                        Veja como é o código na imagem:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula5/print-codigo-inicio-function-props.png" 
+                            alt="Print código criando a function e adicionando o props.">
+                        </div>
+                        <br>
+                        * Dentro do return, adicione uma div e um paragráfo.<br>
+                        * Dentro do paragráfo você vai colocar assim:<br>
+                        <b>Fala ai { props.name }, suave?</b> <br>
+                        Veja imagem do código:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula5/print-codigo-function-props-divs.png" 
+                            alt="Print código, mostrando a div e o paragráfo, e o texto que deve ser adicionado.">
+                        </div>
+                        <br>
+                        <br>
+                        * Agora para inserir na página:<br>
+                        * No <b>App.js</b> import o SayMyName para poder usar esse componente<br>
+                        E aqui iremos passar o valor do atributo <b>props</b>, que está na esperando receber algo.<br>
+                        <b> < SayMyName nome="Giovani" / > </b> <br>
+                        <br>
+                        Agora na página irá aparecer o texto que está no SayMyName,<br>
+                        com o nome que você adicionar aqui.<br>
+                        <br>
+                        Pode ser passado usando uma variável, você cria a variável e passa no parâmetro.<br>
+                        Veja o código :<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula5/print-codigo-props-passar-variavel.png" 
+                            alt="Print do código, mostrando com passa o valor do atributo usando variável.">
+                        </div>
+                        <br>
+                        <br>
+                        <b>Exemplo usando mais de um props</b> <br>
+                        <br>
+                        * Crie outro componente dentro da pasta <b>components</b>, com o nome:<br>
+                        <b>Pessoa.js</b> <br>
+                        <br>
+                        * Dentro dele crie a "function", desse jeito: <br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula5/print-codigo-function-exemplo2.png" 
+                            alt="Print código function Pessoa, como deve ser feito.">
+                        </div>
+                        <br>
+                        * Para ser inserido na página, import no componente "App.js".<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula5/print-codigo-inserindo-pessoa.png" 
+                            alt="Print código, como inserir na página o Pessoa.js.">
+                        </div>
+                        <br>
+                        <br>
+                        ** Para facilitar ainda mais, podemos fazer algumas modificações, retirar os props:<br>
+                        e adiciona variáveis como atributos.<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula5/print-codigo-function-retirando-os-props.png" 
+                            alt="print do código, mostrando com retirar os props e colocar variáveis.">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-06-Adicionando CSS-->
+            <section class="pagina" id="Adicionando-CSS">
+                <header>
+                    <h1 class="titulo"> Adicionando CSS </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        O <b>CSS</b> pode ser <b>adicionado de forma global</b> na aplicação,<br>
+                        por meio de arquivo index.css por exemplo.<br>
+                        <br>
+                        Porém é possivel <b>estilizar a nível de componentes</b>; <br>
+                        Utilizamos o <b>CSS modules</b> para isso;<br>
+                        Basta criar um arquivo como: <b>Componente.module.css</b>, <br>
+                        e chamar esse CSS no componente. <br>
+                        <br>
+                        <br>
+                        <b>Aula prática:</b> <br>
+                        * No arquivo index.css, fica o CSS global que vai configurar todo projeto.<br>
+                        <br>
+                        * Mas pode ser colocado um CSS individual para os componentes,<br>
+                        usando o CSS module.<br>
+                        * Para isso crie um arquivo com o nome que você deseja, e adicione:<br>
+                        <b>module.css</b> <br>
+                        <br>
+                        ** Por exemplo:<b>Frase.module.css</b> <br>
+                        <br>
+                        No arquivo aberto, para criar "classes": <br> 
+                        Não poder ter espaço, deve ser assim:<br>
+                        <b>.fraseContainer</b> <br>
+                        <b>.frase_container</b> <br>
+                        <br>
+                        Veja na imagem o código css da frase.module.css: <br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula6/print-codigo-css-module-frase.png" 
+                            alt="print código css do module frase, como foi feito.">
+                        </div>
+                        <br>
+                        <br>
+                        Agora para adicionar, tem que importa o Frase.module.css no "Frase.js",<br>
+                        depois de importado vamos adicionar as classes, veja na imagem abaixo:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula6/print-importando-css-module.png" 
+                            alt="Print do código, que mostra o arquivo frase.module.css .">
+                        </div> 
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-07-Fragmentos-->
+            <section class="pagina" id="Fragmentos">
+                <header>
+                    <h1 class="titulo"> Fragmentos </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        Os <b>react fragments</b> permite a criação de um componente sem elemento pai; <br>
+                        O propósito é <b>descomplicar os nós do DOM</b>.<br>
+                        A sintaxe é <b> < > </b> e <b> < / > </b>, não há um nome para a tag. <br>
+                        Criamos no próprio JSX.<br>
+                        <br>
+                        <br>
+                        <b>Aula prática</b>: <br>
+                        * Crie um novo componente com o nome "List.js", veja na imagem como é:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula7/print-codigo-lista-com-a-div-pai.png" 
+                            alt="Print do código, do arquivo list.js, com a div como elemento pai.">
+                        </div>
+                        <br>
+                        * Depois de criado, vamos adicionar ele no <b>App.js</b>:<br>
+                        // importar a Lista.js <br>
+                        <b>import Lista from './components/Lista';</b> <br>
+                        <br>
+                        // coloque dentro do return, a chamada para usar a Lista.js <br>
+                        <b> < Lista / > </b> <br>
+                        <br>
+                        * Veja como fica a página: <br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula7/print-pagina-como-fica-com-a-div.png" 
+                            alt="Print da página, mostrando como ficou usando a div como elemento pai.">
+                        </div>
+                        <br>
+                        <br>
+                        * Agora vamos usar o <b>fragments</b>, deixar sem a div, somente ele:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula7/print-codigo-lista-sem-a-div-como-pai.png" 
+                            alt="Print código, da lista.js sem usar a div como elemento pai, usando fragments.">
+                        </div>
+                        <br>
+                        <br>
+                        * Na página ficará assim:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula7/print-pagina-como-fica-com-a-div.png" 
+                            alt="Print da página, mostrando como fica depois de usar o fragments.">
+                        </div>
+                        <br>
+                        <br>
+                        Veja que não mudou nada, então para facilitar e quando você precisar, <br>
+                        pode colocar o "fragments" (<b> < > < / >  </b>) como elemento pai.<br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-08-Avançando em props-->
+            <section class="pagina" id="Avançando-em-props">
+                <header>
+                    <h1 class="titulo"> Avançando em props </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                    Podemos <b>definir tipos para as props</b>, realizando uma especie de validação.<br>
+                    ** String, number, entre outros tipos<br>
                     <br>
-                    Site do React, e lá você tem acesso a sua documentação:<br>
-                    <a href="https://create-react-app.dev/">create-react.app</a>
+                    Definimos em objeto chamado proTypes no próprio componente.<br>
+                    E ainda há possibilidade de <b>definir um valor padrão</b>.<br>
+                    Neste caso utilizamos o objeto <b>defaultProps</b>.<br>
                     <br>
                     <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-02-Instalando o React-->
-        <section class="pagina" id="instalando-o-react">
-            <header>
-                <h1 class="titulo">Instalando o React</h1>
-            </header>
-            <div class="description">
-                <h2>
-                    Para instalar o React vamos utilizar uma ferramenta chamada <b>Create React App</b>.<br>
-                    Recebemos todos os arquivos da biblioteca <b>e temos como executá-la</b>.<br>
-                    Para utilizar precisamos do <b>Node e também npm</b>.<br>
-                    Essa ferramenta também otimiza o app gerado para <b>produção</b>.<br>
-                    E aplica o <b>Virtual Dom</b> para realizar as alterações de Dom.<br>
-                    É possível iniciar a aplicação com  <b>npm start</b>.<br>
-                    <br>
-                    <b>Como criar seu primeiro projeto em React</b>: <br>
-                    * tem que ter instalado o Node e o npm no seu computador.<br>
-                    <br>
-                    Com o VScode aberto, já na pasta que você vai criar esse projeto.<br>
-                    <br>
-                    Abra o terminal, e coloque esse comando:<br>
-                    <b>npx create-react-app meu-projeto</b>  e clique em enter,<br>
-                    pode demorar um pouco para instalar.<br>
-                    <br>
-                    Depois de instalado vai te dá algumas informações, como;<br>
-                    <b>npm start</b> Para inicializar o projeto onde vamos trabalhar.<br>
-                    <b>npm run build</b> Para gerar o build do projeto.<br>
-                    <br>
-                    // Para iniciar o projeto que criamos, tem que primeiro ir até a pasta do projeto:<br>
-                    <b>cd meu-projeto</b> Para você entra na pasta do projeto que foi criado.<br>
-                    <br>
-                    // Para o projeto rodar, inicializar:<br>
-                    <b>npm start</b> <br> <br>
-                    <br>
-                    Vai executar seu navegador automaticamente, se não, você veja os links que serão gerados e clica em um deles.<br>
-                    Irá abrir essa página no seu navegador :<br>
+                    <b>Aula prática</b>: <br>
+                    * Crie um componente com o nome "Item.js", como na imagem abaixo:<br>
                     <div class="imagem">
-                        <img src="./imagens/imagem_Index/print-do-navegador-quando-inicializa-o-react.png"
-                         alt="Print da tela do navegador depois que inicia o projeto usando o npm start.">
+                        <img src="./imagens/imagem-aula8/print-componente-Item.png"
+                        alt="Print do componente Item.js">
                     </div>
                     <br>
-                    Veja os arquivos que ele criou no VScode:<br>
+                    <br>
+                    * Na lista que criamos na aula anterior, tem que importa o "Item",<br>
+                        depois você coloca assim:<br>
                     <div class="imagem">
-                        <img src="./imagens/imagem_Index/print-arquivos-criado-no-inicio-meu-projeto.png" 
-                        alt="print do VScode dos arquivos que foram criados.">
-                    </div>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-03-Entendendo o JSX-->
-        <section class="pagina" id="Entendo-o-JSX">
-            <header>
-                <h1 class="titulo">Entendendo o JSX </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    O <b>JSX</b> é como um HTML, porém dentro do código JavaScript.<br>
-                    É a principal maneira de excrever HTML com o React.<br>
-                    Podemos <b>interpolar variáveis</b>, inserindo ela entre <b>{}</b>. <br>
-                    É possível também <b>executar funções</b> em JSX.<br>
-                    Inserir <b>valores em atributos de tags</b> também é válido em JSX.<br>
-                    <br>
-                    <b>Aulas Práticas</b>: <br> 
-                    * Abra o projeto que foi criado na última aula, colque esses comandos no terminal; <br>
-                    <br>
-                    Para iniciar o projeto, dentro da pasta dele:<br>
-                     <b>npm start</b>.<br>
-                     <br>
-                    Para encerrar, fechar a conexão clique em: <br>
-                    <b>CRTL</b> + <b>C</b> .<br>
-                    <br>
-                    <b>o HTML DEVE ESTÁ CORRETO!!</b><br>
-                    <br>
-                    Esse é o print do código de como fica a parte do <b>App</b>: <br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula3/print-codigo-app-do-react-modificado.png"
-                         alt="Print do código do react da parte do App.">
-                    </div>
-                    <br>
-                    Repare que no início, temos a importação, no caso desse código está importando o css, <br>
-                    que será usado nessa parte do código.<br>
-                    Já no final do código ele vai exporta o que foi criado, ali.<br>
-                    Veja o print:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula3/print-codigo-app-do-react-modificado-export-import.png" 
-                        alt="Print do código do react, dando destaque eo import e export.">
-                    </div>
-                    <br>
-                    E no meio temos a função, onde criamos muitas coisas entre elas criar outra função,<br>
-                    que vai retorna a configuração que fizermos ali dentro.<br>
-                    <br>
-                    Criando uma variável e fazer a interpolação<br>
-                    * Dentro da <b>function</b> crie uma variável, a minha terá o nome de  "name': <br>
-                    <b>const name = 'Giovani'</b> <br>
-                    <br>
-                    E para chamar essa variável se usa o <b> { } </b>, dentro da function mas na parte de return:<br>
-                    <b>< h3 > Olá, { name }< /h3></b> <br>
-                    <br>
-                    * Assim será exibido na página o nome.<br>
-                    Veja como fica no código:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula3/print-codigo-react-variavel-interpolacao.png" 
-                        alt="Print código react, mostrando a função, a variável e como faz para interpolar.">
-                    </div>
-                    <br>
-                    Pode se usar esse comando por exemplo para processar esse "nome":<br>
-                    // cria uma nova variável <br>
-                    <b>const NewName = name.toUpperCase( );</b> <br>
-                    * Deixará o que estiver dentro da variável name, com as letras maiúsculas.<br>
-                    <br>
-                    // para chamar no html e ser exibido na página<br>
-                    <b>< h3 > Olá, { newName }< /h3></b> <br>
-                    <br>
-                    Executando funcionalidades do JavaScript:<br>
-                    // No return, na  parte da tags, adicione a tag "p"<br>
-                    <b>< p > Soma: { 3+2 } < /p > </b> <br>
-                    <br>
-                    <br>
-                    Podemos criar funcões dentro das funções.<br>
-                    Dentro da function App, crie outra "function", que vai retorna a soma de valores:<br>
-                    <b>function sun(a,b){ <br>
-                    ______return a + b ; <br>
-                    __}<br>
-                    </b>
-                    <br>
-                    Na hora de chamar chamamos a função 'sun' e passamos o valor:<br>
-                    <b>< p > Soma: { sun( 3, 7 ) } < /p > </b> <br>
-                    <br>
-                    <br>
-                    Alterar atributos:<br>
-                    * Vamos alterar uma imagem<br>
-                    // criamos a variável que vai guarda essa imagem<br>
-                    <b>const url = 'https://via.placeholder.com/150';</b> <br>
-                    * neste caso a imagem é para vir da internet, mas pode ser de outro local, pasta.<br>
-                    <br>
-                    // Para ser exibida na página, usando a tag "img"<br>
-                    <b>< img src={ url }     alt="minha imagem" / > </b> <br>
-                    <br>
-                    <br>
-                    <b>Importante:</b> <br>
-                    * Só pode ter um elemento Pai e deve ter, dentro do "return",<br>
-                    veja na imagem do print do código, se não tivesse essa "div" estaria dando erro:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula3/pai-elemento-necessario.png" 
-                        alt="print do código mostrando que tem o pai.">
-                    </div>
-                    <br>
-                    <br>
-                    A palvra <b>class</b> não deve ser usada no React, <br>
-                    use a <b>className</b> essa deve ser usada para fazer as classes.<br>
-                    <br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-04-Criando Componentes no React-->
-        <section class="pagina" id="Criando-componentes-no-React">
-            <header>
-                <h1 class="titulo">Criando Componentes no React </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    Permite <b>dividir a aplicação em partes;</b> <br>
-                    Os componentes <b>renderizam JSX</b>, assim como o App.js (que é um componente);<br>
-                    Precisamos <b>criar um arquivo </b> de componente; <br> 
-                    E <b>importá-lo</b> onde precisamos utilizar.<br>
-                    Normalmente fica em uma pasta chamada <b>components</b> <br>
-                    <br>
-                    Vamos para a prática:<br>
-                    * Dentro da pasta <b>src</b>, crie uma pasta com o nome <b>components</b>, <br>
-                    <br>
-                    *Dentro da pasta "components" crie um arquivo com o nome <b>HelloWorld.js</b> <br>
-                    ** É bom usar sempre letras maiúsculas no inicio das palavras.<br>
-                    <br>
-                    * Com o "HelloWorld" aberto, vamos criar uma <b>function</b> com o mesmo nome.<br>
-                    <b>function HelloWorld( ) </b> <br>
-                    * Já coloque o export:<br>
-                    <b>export default HelloWorld ;</b> .<br>
-                    <br>
-                    * Dentro da function, vamos criar o <b>return</b>:<br>
-                    <b>return (</b> <br>
-                    <br>
-                    <b>)</b><br>
-                    <br>
-                    * Dentro do return, colocamos o <b>HTML</b>:<br>
-                    <b> 
-                    < div > </b>  ->> precisa ter o pai <br>
-                    ____<b>< h1 > meu primeiro componente < /h1 ></b> <br> 
-                    <b>< /div > </b>  <br>
-                    <br>
-                    Veja na imagem como fica o <b>HelloWorld.js</b> <br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula4/print-codigo-meu-primeiro-componente.png" 
-                        alt="print do código, componente helloworld.">
-                    </div>
-                    <br>
-                    Para ele poder aparecer na página, tem que importa onde você quer usá-lo:<br>
-                    * Vai no "App.js" e vamos importa ele lá .<br>
-                    <br>
-                    Com o App.js aberto, na parte de cima importe o "HelloWorld";<br>
-                    <b>import HelloWorld from './components/HelloWorld';</b> <br>
-                    <br>
-                    Agora só adiciona dentro do "return", como uma tag:<br>
-                    <b> < HelloWorld/ > </b> <br>
-                    <br>
-                    Veja como fica o código na hora de importa:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula4/print-import-hello-no-app.png" 
-                        alt="Print do código na hora de importar o HelloWorld.">
-                    </div>
-                    <br>
-                    Um componente tem que ser <b>reutilizavél</b>, ou seja pode ser usado em outro lugares.<br>
-                    * Vamos criar outro componente, com o nome de "Frase".<br>
-                    * O jeito de criar é igual ao componente "HelloWorld".<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula4/print-componente-frase.png" 
-                        alt="print do código do componente frase.">
-                    </div>
-                    <br>
-                    ** O componente "Frase" pode ser reutilizado depois em vários lugares e várias vezes.<br>
-                    Veja na imagem o código:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula4/print-codigo-componente-frase-import-reutilizar.png" 
-                        alt="print do código componente frase, reutilizando várias vezes.">
-                    </div>
-                    <br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-05-Trabalhando com Props-->
-        <section class="pagina" id="Trabalhando-com-props">
-            <header>
-                <h1 class="titulo"> Trabalhando com Props</h1>
-            </header>
-            <div class="description">
-                <h2>
-                    As <b>props</b> são valores passados para componentes.<br>
-                    Podem ser deixadas <b>dinâmicas</b> , ou seja <b>mudando a execução</b>,<br>
-                    por causa do valor da prop.<br>
-                    O valor é <b>passado como um atributo</b> na chamada do componente.<br>
-                    E precisa ser <b>resgatado dentro de uma propriedade/argumento</b>,<br>
-                    chamada props na função de definição do componente.<br>
-                    As props são somente de leitura.<br>
-                    <br>
-                    Aula prática:<br>
-                    <br>
-                    * No projeto que criamos :<br>
-                    * Na pasta de components, crie um novo componente com o nome:<br>
-                    <b>SayMyName</b> <br>
-                    <br>
-                    Na hora de criar a function passa o argumento <b>props</b>.<br>
-                    Veja como é o código na imagem:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula5/print-codigo-inicio-function-props.png" 
-                        alt="Print código criando a function e adicionando o props.">
-                    </div>
-                    <br>
-                    * Dentro do return, adicione uma div e um paragráfo.<br>
-                    * Dentro do paragráfo você vai colocar assim:<br>
-                    <b>Fala ai { props.name }, suave?</b> <br>
-                    Veja imagem do código:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula5/print-codigo-function-props-divs.png" 
-                        alt="Print código, mostrando a div e o paragráfo, e o texto que deve ser adicionado.">
-                    </div>
-                    <br>
-                    <br>
-                    * Agora para inserir na página:<br>
-                    * No <b>App.js</b> import o SayMyName para poder usar esse componente<br>
-                    E aqui iremos passar o valor do atributo <b>props</b>, que está na esperando receber algo.<br>
-                    <b> < SayMyName nome="Giovani" / > </b> <br>
-                    <br>
-                    Agora na página irá aparecer o texto que está no SayMyName,<br>
-                    com o nome que você adicionar aqui.<br>
-                    <br>
-                    Pode ser passado usando uma variável, você cria a variável e passa no parâmetro.<br>
-                    Veja o código :<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula5/print-codigo-props-passar-variavel.png" 
-                        alt="Print do código, mostrando com passa o valor do atributo usando variável.">
-                    </div>
-                    <br>
-                    <br>
-                    <b>Exemplo usando mais de um props</b> <br>
-                    <br>
-                    * Crie outro componente dentro da pasta <b>components</b>, com o nome:<br>
-                    <b>Pessoa.js</b> <br>
-                    <br>
-                    * Dentro dele crie a "function", desse jeito: <br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula5/print-codigo-function-exemplo2.png" 
-                        alt="Print código function Pessoa, como deve ser feito.">
-                    </div>
-                    <br>
-                    * Para ser inserido na página, import no componente "App.js".<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula5/print-codigo-inserindo-pessoa.png" 
-                        alt="Print código, como inserir na página o Pessoa.js.">
-                    </div>
-                    <br>
-                    <br>
-                    ** Para facilitar ainda mais, podemos fazer algumas modificações, retirar os props:<br>
-                    e adiciona variáveis como atributos.<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula5/print-codigo-function-retirando-os-props.png" 
-                        alt="print do código, mostrando com retirar os props e colocar variáveis.">
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-06-Adicionando CSS-->
-        <section class="pagina" id="Adicionando-CSS">
-            <header>
-                <h1 class="titulo"> Adicionando CSS </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    O <b>CSS</b> pode ser <b>adicionado de forma global</b> na aplicação,<br>
-                    por meio de arquivo index.css por exemplo.<br>
-                    <br>
-                    Porém é possivel <b>estilizar a nível de componentes</b>; <br>
-                    Utilizamos o <b>CSS modules</b> para isso;<br>
-                    Basta criar um arquivo como: <b>Componente.module.css</b>, <br>
-                    e chamar esse CSS no componente. <br>
-                    <br>
-                    <br>
-                    <b>Aula prática:</b> <br>
-                    * No arquivo index.css, fica o CSS global que vai configurar todo projeto.<br>
-                    <br>
-                    * Mas pode ser colocado um CSS individual para os componentes,<br>
-                    usando o CSS module.<br>
-                    * Para isso crie um arquivo com o nome que você deseja, e adicione:<br>
-                    <b>module.css</b> <br>
-                    <br>
-                    ** Por exemplo:<b>Frase.module.css</b> <br>
-                    <br>
-                    No arquivo aberto, para criar "classes": <br> 
-                    Não poder ter espaço, deve ser assim:<br>
-                    <b>.fraseContainer</b> <br>
-                    <b>.frase_container</b> <br>
-                    <br>
-                    Veja na imagem o código css da frase.module.css: <br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula6/print-codigo-css-module-frase.png" 
-                        alt="print código css do module frase, como foi feito.">
-                    </div>
-                    <br>
-                    <br>
-                    Agora para adicionar, tem que importa o Frase.module.css no "Frase.js",<br>
-                    depois de importado vamos adicionar as classes, veja na imagem abaixo:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula6/print-importando-css-module.png" 
-                        alt="Print do código, que mostra o arquivo frase.module.css .">
+                        <img src="./imagens/imagem-aula8/print-componente-lista.png" 
+                        alt="Print do componente Lista.js ">
                     </div> 
                     <br>
                     <br>
-                </h2>
-            </div>
+                    ** Para garantir que seja passado somente strings e numbers,<br>
+                    vamos importa o <b>PropTypes</b> pacote que já vem com o React.<br>
+                    Irá fazer a validação se é string e numbers, que estão sendo passada.<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula8/print-componente-Item-com-proptypes-string.png" 
+                        alt="print componente Item, usando o PropTypes.">
+                    </div>
+                    <br>
+                    Neste caso está dizendo que a marca é uma string, ou seja, texto,<br>
+                    Se não for uma string, colocar um número, irá dá erro no console:<br>
+                    <div class="imagem">
+                        <img src="./imagens/imagem-aula8/print-pagina-mostrando-os-erros.png" 
+                        alt="Print da página, mostrando os erros que aparece no console.">
+                    </div>
+                    <br>
+                    <br>
+                    ** Pode ser adicionado no código o <b>isRequired</b>, será obrigátorio, <br>
+                    <b>marca: PropTypes.string.isRequired,</b> <br>
+                    <br>
+                    O erro aparecer somente no console, a página abrirá normalmente.<br>
+                    É uma validação a nível de programador, por isso a página funciona normal.<br>
+                    <br>
+                    <br>
+                    <b>DefaultProps</b> <br>
+                    Ele vai deixar uma mensagem dizendo algo, se o "item" não estiver ali,<br>
+                    tipo uma mensagem de erro ou aviso que algo não foi feito corretamente.<br>
+                    <br>
+                    Veja o código como fica:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula8/print-codigo-defaultprops.png" 
+                            alt="print do código , mostrando o código defaultProps.">
+                        </div>
+                        <br>
+                        <br>
+                        Como aparece no navegador o erro, ou a mesagem:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula8/print-pagina-mostrando-aviso-defaultprops.png" 
+                            alt="Print da página, que mostra a mensagem que algo está errado.">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-09-Eventos no React (onclick, onchange e onSubmit)-->
+            <section class="pagina" id="Eventos-no-React-(onClick-onChange-onSubmit)-parte1">
+                <header>
+                    <h1 class="titulo"> Eventos no React (onclick, onchange e onSubmit)  </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        Os <b>eventos de React</b> são os mesmo eventos do DOM.<br>
+                        Ou seja, temos eventos para responder a um click.<br>
+                        <b>O evento é atrelado a uma tag</b> que irá executá-lo.<br>
+                        Geralmente um <b>método</b> é atribuido ao evento.<br>
+                        Esse método deve ser criado no componente.<br>
+                        <br>
+                        <br>
+                        <b>Aula prática</b>: <br>
+                        * Crie um novo componente com o nome:<br>
+                        <b>Evento.js</b> para poder usar o evento.<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula9/print-componente-Evento-sem-metodo.png" 
+                            alt="Print do código do componente Evento sem a funçao.">
+                        </div>
+                        <br>
+                        Agora vamos adicionar a função, que será acionada quando clicar.<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula9/print-codigo-meu-evento.png" 
+                            alt="Print do código do componente evento com funcao onclick.">
+                        </div>
+                        <br>
+                        <br>
+                        Na página ficará assim quando for clicado:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula9/print-pagina-evento-onclick.png" 
+                            alt="Print da página mostrando o evento click.">
+                        </div>
+                        <br>
+                        A idéia é sempre essa, mas pode mudar a lógica, valores e proprieadades.<br>
+                        <br> 
+                        <br>
+                        Por exemplo, vamos fazer recendo um número e ao clicar mostra esse número:<br>
+                        Código do Evento.js:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula9/print-codigo-evento-recendo-numero.png" 
+                            alt="Print do código, do componente evento.js, recendo número como parâmetro.">
+                        </div>
+                        <br>
+                        Código do App.js, passando o número e aparecer na página:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula9/print-codigo-App-js-adicionando-numero.png" 
+                            alt="Print código App.js, chamando e adicionando números.">
+                        </div>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-09-Eventos no React (onclick, onchange e onSubmit) parte 2-->
+            <section class="pagina" id="Eventos-no-React-(onClick-onChange-onSubmit)-parte2">
+                <header>
+                    <h1 class="titulo"> Eventos no React (onclick, onchange e onSubmit) parte 2 </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        <b>Eventos de Formulário</b> <br>
+                        * Crie um novo componente com o nome:<br>
+                        <b>Form.js</b> <br>
+                        Veja na imagem como deve ser: <br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula9/print-componente-form.png" 
+                            alt="Print do código do componenete form.js como foi feito.">
+                        </div>
+                        <br>
+                        Esse <b>e.preventDefault()</b> que foi adicionado aqui, <br>
+                        serve para dá o sivso aqui no Front-end.<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula9/print-priventDeafault.png" 
+                            alt="Print do código form, mostrando o preventDefaulr.">
+                        </div>
+                        <br>
+                        <br>
+                        Para ser executado, dever ser chamado no componente <b>App.js</b>. <br>
+                        <br>
+                        Veja como fica na página:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula9/print-pagina-cadastro-resultado.png" 
+                            alt="Print da página, mostrando como ficou.">
+                        </div>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-10-useState-->
+            <section class="pagina" id="UseState">
+                <header>
+                    <h1 class="titulo"> useState </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        O <b>useState</b> é um hook de react; <br>
+                        Com ele conseguimos <b>manusear o estado </b> de um componente de forma simples. <br>
+                        Este hook <b>funciona muito bem com eventos.</b> <br>
+                        <br>
+                        <br>
+                        <b>Aula prática</b>: <br>
+                        * Vamos usar o formulário, que criamos na outra aula.<br>
+                        * Importa o "useState", no arquivo form.js <br>
+                        * Crie duas variáveis, uma que vai receber e a outra irá setar o valor recebido.<br>
+                        Veja como ficou o código:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula9/print-componente-form-parte1.png" 
+                            alt="primeira parte do print do código do arquivo form.js">
+                        </div>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula9/print-componente-form-2parte.png" 
+                            alt="Segunda parte do print do código do arquivo form.js">
+                        </div>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-11-Passar eventos por props-->
+            <section class="pagina" id="Passar-eventos-por-props">
+                <header>
+                    <h1 class="titulo"> Passar eventos por props </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        Os <b>métodos</b> também podem ser passado por props.<br>
+                        Ou seja, um <b>componente filho pode ativar o método de seu pai</b>.<br>
+                        Vamos acessar o método por meio de um <b>evento</b>.<br>
+                        A sintaxe é a mesma de uma props de dados: <b>props.meuEvento</b>.<br>
+                        <br>
+                        <br>
+                        <b>Aula prática</b>: <br>
+                        <br>
+                        Para nosso projeto ficar mais bonito, crie uma pasta dentro da pasta componente,<br>
+                        com o nome de <b>evento</b> para separar nossos componentes.<br>
+                        <br>
+                        Dentro da pasta, vamos criar um novo componente com o nome <b>Button.js</b>.<br>
+                        Veja como deve ser o componente "Button.js": <br>
+                        <b>Não precisa colocar "( )" por que irá retorna somente uma tag "button"</b> <br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula11/print-componente-Button.png" 
+                            alt="Print do código do componente Button.js">
+                        </div>
+                        <br>
+                        Depois de criado o componente, que vai receber algo do pai <b>props</b>.<br>
+                        Vai no componente que já criamos em outra aula, o componente <b>Evento.js</b>,<br>
+                        vamos importa o "Button" nele:<br>
+                        <div class="imagem">
+                            <img src="" alt="">
+                        </div>
+                        <br>
+                        Agora vamos adicionar um evento no filho <b>Button</b>.<br>
+                        <br>
+                        <b> return < button onClick= { props.event }  > { props.text }  < /button > </b> <br>
+                        <br>
+                        No <b>App.js</b>, coloque somente um comando para chamar o evento.<br>
+                        <b> < Evento / > </b> <br>
+                        <br>
+                        <br>
+                        No componente <b>Evento.js</b>, faremos algumas modificações:<br>
+                        Veja na imagem como fica o código: <br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula11/print-codigo-componente-Evento.png" 
+                            alt="Print do código co comonente Evento.js">
+                        </div>
+                        <br>
+                        Veja na página como fica:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula11/print-pagina-mostrando-o-evento-em-acao.png" 
+                            alt="Print da página, mostrando que o evento funcionou direitinho.">
+                        </div>
+                        <br>
+                        <br>
+                        Tem como usar o mesmo Evento, somente modificando as props,<br>
+                        vamos ver como usar o mesmo componente para dois eventos diferentes:<br>
+                        <br>
+                        No componente <b>Evento.js</b>, vamos adicionar outra "function" e outro "button",<br>
+                        com nomes diferentes, mas que executaram o mesmo evento:<br>
+                        Veja como é o código:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula11/print-codigo-componente-Evento-com-dois-eventos.png" 
+                            alt="Print do código do componente Evento.js , mas agora com dois eventos diferentes.">
+                        </div>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-12-Renderização por condição-->
+            <section class="pagina" id="Renderizaçao-por-condição">
+                <header>
+                    <h1 class="titulo"> Renderização por condição </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        Podemos atrelar a exibição de algum elementoa um <b>if</b>.<br>
+                        Esta ação é chamada de <b>renderização condicional</b>; <br>
+                        Envolvemos as tags em chaves <b>{ }</b>; <br>
+                        Como as chaves <b>executam JavaScript</b>, criamos nossa condição;<br>
+                        É possível usar o <b>state</b> para criar as condições; <br>
+                        <br>
+                        <br>
+                        <b>Aula prática</b>:<br>
+                        * No componente "App.js" pode deixar apenas o "h1", escrito assim:<br>
+                        <b>Renderização condicional</b> <br>
+                        <br>
+                        * Vamos criar um novo componente, com o nome de:<br>
+                        <b>Condicional.js</b> <br>
+                        <br>
+                        * Criaremos um formulário básico, veja na imagem o código:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-simples.png" 
+                            alt="Print do código do componente Condicional.js">
+                        </div>
+                        <br>
+                        * Para ele aparecer na página, deve ser chamado no componente "App.js".<br>
+                        <br>
+                        Agora iremos adicionar o "useState", importando no componente <b>Condicional.js</b>;<br>
+                        Criando duas variáveis:<br>
+                        <b>const [ email, setEmail ] = useState( ) </b> <br>
+                        <br>
+                        Para seta o "email", vamos usar o <b>onChange</b>;<br>
+                        Vamos adicionar ele na tag "input", ficando assim:<br>
+                        <b>onChange={ (e) => setEmail(e.target.value) } </b> <br> 
+                        <br>
+                        Mas queremos manipular esse email como se fosse email do usuário;<br>
+                        Para vamos criar outro "state":<br>
+                        <b>const [ userEmail, setUserEmail ] = useState( ) </b> <br>
+                        <br>
+                        Vamos criar um método que quando o usuário clicar o email seja o userEmail;<br>
+                        No "function enviarEmail", vamos apagar o "console.log" e colocar assim:<br>
+                        <b>setUserEmail(email)</b> <br>
+                        <br>
+                        Para saber se deu certo, vamos colocar abaixo do button, assim:<br>
+                        <b>{ userEmail }</b> <br>
+                        <br>
+                        Veja como fica todo o código na imagem:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-com-useState.png" 
+                            alt="Print do código do componente Condicional.js, usando o useState.">
+                        </div>
+                        <br>
+                        <br>
+                        Na página deve aparecer assim:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula12/print-pagina-usando-useState.png" 
+                            alt="Print da página depois de usar o useState.">
+                        </div>
+                        <br>
+                        <br>
+                        Agora podemos fazer uma verificação nesse "email";<br>
+                        Se for "verdadeiro" será adicionado outra "div":<br>
+                        Para isso, onde adicionamos o <b>{ userEmail }</b>, abaixo do button,<br>
+                        vamos adicionar isso:<br>
+                        <b>{ userEmail && ( </b> <br>
+                        __<b> < div > </b> <br>
+                        ______<b> < p > O email do usuário é: { userEmail } < /p > </b> <br>
+                        __<b> < /div > </b> <br>
+                        <b>)}</b> <br>
+                        <br>
+                        Veja o código como fica depois dessa atualização:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-com-useState-fazendo-verificacao.png" 
+                            alt="Print código Componente Condicional, fazendo a verificação no email do usuário.">
+                        </div>
+                        <br>
+                        <br>
+                        Veja na página como fica agora:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula12/print-pagina-fazendo-a-verificacao.png" 
+                            alt="Print da página depois de fazer a verificação.">
+                        </div>
+                        <br>
+                        Podemos fazer um outro evento para limpar o email,<br>
+                        fazendo a alteração nessa mesma "div":<br>
+                        Para isso, basta adicionar um button dentro da verificação, abaixo do "p":<br>
+                        <b> < button onClick = { limparEmail } > Limpar email < /button > </b> <br>
+                        <br>
+                        Agora criamos uma "function" que deixará vazio o "setUserEmail":<br>
+                        <b>setUserEmail ( ' ' ) </b> <br>
+                        <br>
+                        Veja o código como fica agora:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-Limpando-email.png" 
+                            alt="Print do código componente, agora com a função de limmpar o email.">
+                        </div>
+                        <br>
+                        Veja como aparece na página: <br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula12/print-pagina-funcao-limpar-email.png" 
+                            alt="Print página mostrando a opção para limpar o email.">
+                        </div>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-13-Renderização de listas-->
+            <section class="pagina" id="Renderizaçao-de-listas">
+                <header>
+                    <h1 class="titulo"> Renderização de listas </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        Para renderizar uma lista vamos primeiramente precisar de um <b>array</b>;<br>
+                        Depois utilizamos a <b>função map</b>, para percorre cada um dos itens.<br>
+                        Podendo assim renderizar algo na tela.<br> 
+                        É possível <b>unir operadores condicionais</b> com a renderização de lista.<br>
+                        <br>
+                        <br>
+                        <b>Aula prática</b>:<br>
+                        * Vai no componente "App.js", e pode tirar a tag <b>Condicional</b>,<br>
+                        e mudar o nome do titulo para : "Renderização de listas"<br>
+                        <br>
+                        * Vamos criar uma lista, dentro do componente "App.js"<br>
+                        // A variável irá receber esses nomes.<br>
+                        <b>const meusItens = [ 'React', 'vue', 'Angular' ] </b> <br>
+                        <br>
+                        * Agora vamos criar um novo componente, com o nome de : "OutraLista.js",<br>
+                        dentro dele vamos fazer assim, como está na imagem:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula13/print-codigo-componente-OutraLista.png" 
+                            alt="Print do código do componente OutraLista.js">
+                        </div>
+                        <br>
+                        <br>
+                        Para que ela apareça na página, tem que chamar ele no "App.js",<br>
+                        e adicionar a props:<br>
+                        <b> < OutraLista itens= { meusItens } / > </b> <br>
+                        <br>
+                        <br>
+                        <b>Quando a lista estiver vazia</b> <br>
+                        * Vamos dizer que não foi encontrado nada na lista, então faremos um <b>if</b> e <b>else</b>,<br>
+                        para caso estiver vazia, dá uma resposta ao usuário.<br>
+                        <br>
+                        Vamos fazer algumas modificações no código do componente "OutraLista",
+                        adicionar um if e else, que quando a lista estiver vazia vai exibir uma mensagem:<br>
+                        Veja como fica na imagem o código:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula13/print-codigo-componente-OutraLista-com-IF-e-ELSE.png" 
+                            alt="Print do código, do componente OutraLista.js, com if e else.">
+                        </div>
+                        <br>
+                        <br>
+                        Na hora de chamar, no componente "App.js", só coloca uma lista vazia:<br>
+                        <b> < OutraLista itens= { [ ] } / > </b> <br>
+                        <br>
+                        <br>
+                        Veja como fica a página:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula13/print-pagina-como-fica-usando-a-renderizacao-de-lista.png" 
+                            alt="Print da página, mostrando como ficou depois de usar a renderização de listas.">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-14-State Lift-->
+            <section class="pagina" id="state-lift">
+                <header>
+                    <h1 class="titulo"> State Lift </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        <b>State Lift</b> é uma tecnica ultilizada para compartilhar o state.<br>
+                        É normal vários componentes <b>dependerem do mesmo estado</b>;<br>
+                        Então precisamos elevar o nível do mesmo a um <b>componente pai</b>;<br>
+                        Então centralizamos o state no pai, e <b>definimos quem usa e quem define </b> (setState) <br>
+                        <br>
+                        <br>
+                        <b>Aula prática</b>: <br>
+                        * Tire algumas coisas, do componente "App.js", deixe somente o titulo:<br>
+                        <b>State Lift</b> <br>
+                        <br>
+                        * Agora vamos criar um novo componente, com o nome: <br>
+                        <b>SeuNome.js</b> <br>
+                        Veja na imagem como é o código:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula14/print-codgo-componente-SeuNome.png" 
+                            alt="Print do código do componente SeuNome.js">
+                        </div>
+                        <br>
+                        * Para aplicar o recurso "State Lift", vamos adicionar no componente "pai",<br>
+                        que no nosso caso está sendo o componente <b>App.js</b>, mas poderia ser outro.<br>
+                        <br>
+                        Veja o código como deve ser feito:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula14/print-codigo-app-componente-pai.png" 
+                            alt="Print código do componente App.js, que será o componente pai.">
+                        </div>
+                        <br>
+                        <br>
+                        * Para passar o nome, que vai está no filho para o pai,<br>
+                        faremos uma modificação no código do componente <b>SeuNome.js</b>:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula14/print-codigo-componente-SeuNome-diferente.png" 
+                            alt="Print doo código do componente SeuNome.js, atualizado para receber">
+                        </div>
+                        <br>
+                        <br>
+                        * Vamos utilizar esse dado de outra forma.<br>
+                        * Crie outro componente com o nome <b>Saudacao</b> que vai receber o dado do "State",<br>
+                        e fazer uma verificação se tiver um nome vai exibir uma saudação.<br>
+                        <br>
+                        Veja como é o código do componente <b>Saudacao.js</b>:<br>
+                        Usaremos uma condição, se estiver nome vai aparecer se não, nada aparece na página.<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula14/print-codigo-componente-Saudacao.png" 
+                            alt="Print do código do componente Saudacao.js, mostrando como deve ficar.">
+                        </div>
+                        <br>
+                        <br>
+                        Agora veja na imagem abaixo, como deve ficar sua página:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula14/print-da-pagina-mostrando-como-ficou-depois-de-usar-o-state-lift.png" 
+                            alt="Print da página mostrando como ficou depois de usar o state lift.">
+                        </div>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-15-React Router-->
+            <section class="pagina" id="React-Router">
+                <header>
+                    <h1 class="titulo"> React Router</h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        O <b>React Router</b> é um pacote para mudança de URLs da apllicação;<br>
+                        Podemos assim acessar outras views, <b>sem o page reload</b>;<br>
+                        <b>Trocando apenas uma parte do layout da aplicação</b>, ou seja, o que muda de view para view.<br>
+                        Precisamos <b>instalar esse pacote</b> no projeto;<br>
+                        E também realizar algumas mudanças em como o App é estruturado;<br>
+                        <br>
+                        <br>
+                        <b>Aula prática</b>: <br>
+                        * Primeiro passo é instalar o pacote, no pront de comando,<br>
+                        Verifique se você está dentro da pasta do projeto, coloque:<br>
+                        <b>npm install react-router-dom</b> e dê enter para instalar...<br>
+                        <br>
+                        * Vamos limpar o componente "App.js", deixando ele como na imagem abaixo:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-código-app-limpo.png" 
+                            alt="Print do componente App.js, sem nada para começar a usar o router-DOM.">
+                        </div>
+                        <br>
+                        * Depois disso vamos usar uma série de componentes do react-Dom,<br>
+                        vamos importa eles no App.js.<br>
+                        <b>import { BrowserRouter as Router, Route, Link } from 'react-router-dom'</b> <br>
+                        <br>
+                        * Depois iremos envolver toda nossa aplicação em <b>Router</b>,<br>
+                        Dentro dele, criamos uma barra de navegação, com links para as páginas.<br>
+                        Para isso criamos uma tag <b>ul</b> dentro dela <b>li</b> e dentro da <b>li</b>:
+                        <br>
+                        Usaremos o <b>Link</b> que importamos que será como a tag "a",<br>
+                        dentro do Link ao invés de usar o "href" usaremos o <b>to=""</b>;<br>
+                        <br>
+                        Vamos cria o link para  página "Home", colocando assim:<br>
+                        <b> < Link to="/" > Home < /Link > </b> <br>
+                        <br>
+                        Depois criaremos mais dois links, para outras páginas.<br>
+                        Veja o código do App.js, como fica:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-código-app-definindo-Router-Links.png" 
+                            alt="Print do componente App.js, com as Router e Links, mas falta definir outras coisas ainda.">
+                        </div>
+                        <br>
+                        <br>
+                        <b>Criar as páginas Home, Empresa.js e Contato.js</b>: <br>
+                        * Dentro da pasta <b>components</b>, crie uma nova pasta com o nome de <b>pages</b>, <br>
+                        dentro dela crie um novo componente com o nome "Home.js", como na imagem:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-componente-Home.png" 
+                            alt="Print do componente Home.js .">
+                        </div>
+                        <br>
+                        * Os outros componentes serão praticamentes iguais, basta copiar do Home.js <br>
+                        modifique somente o nome deles, colocando: Empresa, Contato.<br>
+                        <br>
+                        <br>
+                        * Agora precisamos configurar o App.js, para poder ter acesso as páginas que criamos.<br>
+                        Para isso vamos usar o <b>Routes</b> e declarar nossas rotas;<br>
+                        Veja o código como deve ficar na imagem abaixo:
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-código-app-definindo-Routes-as-rotas-dos-links.png" 
+                            alt="Print do componente App.js, mostrando como usar o Routes para definir as rotas doa links.">
+                        </div>
+                        <br>
+                        <br>
+                        * Para deixar melhor nosso projeto, vamos criar um componente de menu de navegação.<br>
+                        * Na pasta "components" crie um com o nome: <b>Navbar</b>, copie a tag "ul", <br>
+                        e coloque dentro desse novo componente.<br>
+                        Veja na imagem como fica:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-componente-Navbar.png" 
+                            alt="Print do componente Navbar.js, mostrando como foi feito o código.">
+                        </div>
+                        <br>
+                        * Agora modificamos o componente <b>App.js</b>, tirando as tags "ul e li",<br>
+                        e importando o componente "Navbar.js" e colando ele no lugar das tags.<br>
+                        Veja na imagem como fica:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-código-App-usando-a-Navbar.png" 
+                            alt="Print do componente App.js, usando o componente Navbar.js e sem as tags ul e li.">
+                        </div>
+                        <br>
+                        <br>
+                        * Podemos também já criar o componente <b>Footer.js</b>, que é o Rodapé da página,<br>
+                        crie uma nova pasta com o nome "layout" dentro dela, coloque o componente,<br>
+                        "Navbar.js" e crie o <b>Footer.js</b> .<br> 
+                        Veja como será:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-componete-Footer.png" 
+                            alt="Print do componente Footer.js">
+                        </div>
+                        <br>
+                        * Basta adicionar ele no componente "App.js", no final do <b>Routes</b>,<br>
+                        e importa ele no começo.<br>
+                        Veja como fica o componente "App.js" agora finalizado:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-código-App-finalizado.png" 
+                            alt="Print do componente App.js, agora finalizado.">
+                        </div>
+                        <br>
+                        <br>
+                        * Agora para melhorar ainda mais, vamos adicionar um <b>CSS Module</b>,<br>
+                        no componente "Navbar.js".<br>
+                        * Dentro da pasta "layout", cria um css module assim:<br>
+                        <b>Navbar.module.css</b> <br>
+                        Veja como será:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-Navbar-module-css.png" 
+                            alt="Print do Navbar.module.css">
+                        </div>
+                        <br>
+                        <br>
+                        * Para usar no componente "Navbar" temos que importa e criar as classes:<br>
+                        Veja na imagem como fica o componente <b>Navbar.js</b>:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-componente-Navbar-finalizado.png" 
+                            alt="Print do componente Navbar.js, finalizado com tudo certo.">
+                        </div>
+                        <br>
+                        <br>
+                        Veja como fica a página depois de tudo isso:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-pagina-finalizada-react-router-dom.png" 
+                            alt="Print da página depois de realizado tudo o que foi visto sobre react-router-Dom">
+                        </div>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <!--Aula-16-React Icons-->
+            <section class="pagina" id="react-icons">
+                <header>
+                    <h1 class="titulo"> React Icons </h1>
+                </header>
+                <div class="description">
+                    <h2>
+                        O <b>React Icons</b> é um pacote de icones externo; <br>
+                        Precisamos <b>adicionar ao projeto atráves do npm</b>; <br>
+                        Ele nos permite adicionar icones ao projeto com uma, <br>
+                        <b>sintaxe parecida a de um componente</b>; <br>
+                        Além disso <b>há uma grande quantidade de icons</b> disponivéis; <br>
+                        <br>
+                        <br>
+                        <b>Aula prática</b>: <br>
+                        * Vamos no site dá uma olhada no React Icons, só pesquisar no google.<br>
+                        <a href="https://react-icons.github.io/react-icons/">React Icons</a> <br>
+                        <br>
+                        <br>
+                        * Vamos instalar o React Icons, se o projeto tiver ativo, desativa ele,<br>
+                        no pront de comando coloque o <b>Ctrl + C </b>, vai fechar o projeto. <br>
+                        <br>
+                        * Agora vamos instalar o pacote do React Icons, no pront de comando coloque:<br>
+                        <b>npm install react-icons</b> e dê enter.<br>
+                        <br>
+                        * Vamos adicionar icons no componente <b>Footer.js</b>; <br>
+                        Vamos adicionar icon das redes socias. <br>
+                        * Dentro do componente "Footer.js", vamos importa os icons:<br>
+                        // Importando os iconis de Facebook, Instagram e Linkedin:<br>
+                        <b>import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa' ;</b> <br>
+                        <br>
+                        Adicionamos dentro do return:<br>
+                        Criamos uma lista, com a tag "ul" e dentro das "li" adicionar os icons;<br>
+                        <br>
+                        * Executamos o projeto, no pront de comando usando o <b>npm start</b> <br>
+                        <br>
+                        <br>
+                        Veja como fica o código, no componente "Footer.js":<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-componente-Footer-usando-icons.png" 
+                            alt="Print do componente Footer.js, mostrando a importação e o uso do icons.">
+                        </div>
+                        <br>
+                        <br>
+                        Agora vamos criar um style, o CSS para o componente Footer.js, <br>
+                        para isso vamos criar um CSS Módule, dentro da pasta "layout":<br>
+                        <b>Footer.module.css</b> <br>
+                        E dentro dela vamos criar os estilos.<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-componente-Footer-module-css.png" 
+                            alt="Print do componente Footer module css, com os estilos que serão adicionados no componente">
+                        </div>
+                        <br>
+                        <br>
+                        * Agora vamos importa os estilos no Footer.js, e adicionar as classes:<br>
+                        Veja na imagem como fica o código: <br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-componente-Footer-adicionando-estilos-css-module-classes.png" 
+                            alt="print do componente Foote.js, adicionando os estilos e classes.">
+                        </div>
+                        <br>
+                        <br>
+                        Veja na página como fica:<br>
+                        <div class="imagem">
+                            <img src="./imagens/imagem-aula15/print-da-pagina-como-fica-depois-de-adicionar-os-icons.png" 
+                            alt="Print da página, mostrando como fica depois de usar os icons e seu estilo.">
+                        </div>
+                        <br>
+                        <br>
+                    </h2>
+                </div>
+            </section>
+            <br>
+            <br>
         </section>
-        <!--Aula-07-Fragmentos-->
-        <section class="pagina" id="Fragmentos">
-            <header>
-                <h1 class="titulo"> Fragmentos </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    Os <b>react fragments</b> permite a criação de um componente sem elemento pai; <br>
-                    O propósito é <b>descomplicar os nós do DOM</b>.<br>
-                    A sintaxe é <b> < > </b> e <b> < / > </b>, não há um nome para a tag. <br>
-                    Criamos no próprio JSX.<br>
-                    <br>
-                    <br>
-                    <b>Aula prática</b>: <br>
-                    * Crie um novo componente com o nome "List.js", veja na imagem como é:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula7/print-codigo-lista-com-a-div-pai.png" 
-                        alt="Print do código, do arquivo list.js, com a div como elemento pai.">
-                    </div>
-                    <br>
-                    * Depois de criado, vamos adicionar ele no <b>App.js</b>:<br>
-                    // importar a Lista.js <br>
-                    <b>import Lista from './components/Lista';</b> <br>
-                    <br>
-                    // coloque dentro do return, a chamada para usar a Lista.js <br>
-                    <b> < Lista / > </b> <br>
-                    <br>
-                    * Veja como fica a página: <br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula7/print-pagina-como-fica-com-a-div.png" 
-                        alt="Print da página, mostrando como ficou usando a div como elemento pai.">
-                    </div>
-                    <br>
-                    <br>
-                    * Agora vamos usar o <b>fragments</b>, deixar sem a div, somente ele:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula7/print-codigo-lista-sem-a-div-como-pai.png" 
-                        alt="Print código, da lista.js sem usar a div como elemento pai, usando fragments.">
-                    </div>
-                    <br>
-                    <br>
-                    * Na página ficará assim:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula7/print-pagina-como-fica-com-a-div.png" 
-                        alt="Print da página, mostrando como fica depois de usar o fragments.">
-                    </div>
-                    <br>
-                    <br>
-                    Veja que não mudou nada, então para facilitar e quando você precisar, <br>
-                    pode colocar o "fragments" (<b> < > < / >  </b>) como elemento pai.<br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-08-Avançando em props-->
-        <section class="pagina" id="Avançando-em-props">
-            <header>
-                <h1 class="titulo"> Avançando em props </h1>
-            </header>
-            <div class="description">
-                <h2>
-                   Podemos <b>definir tipos para as props</b>, realizando uma especie de validação.<br>
-                   ** String, number, entre outros tipos<br>
-                   <br>
-                   Definimos em objeto chamado proTypes no próprio componente.<br>
-                   E ainda há possibilidade de <b>definir um valor padrão</b>.<br>
-                   Neste caso utilizamos o objeto <b>defaultProps</b>.<br>
-                   <br>
-                   <br>
-                   <b>Aula prática</b>: <br>
-                   * Crie um componente com o nome "Item.js", como na imagem abaixo:<br>
-                   <div class="imagem">
-                    <img src="./imagens/imagem-aula8/print-componente-Item.png"
-                     alt="Print do componente Item.js">
-                   </div>
-                   <br>
-                   <br>
-                   * Na lista que criamos na aula anterior, tem que importa o "Item",<br>
-                    depois você coloca assim:<br>
-                   <div class="imagem">
-                    <img src="./imagens/imagem-aula8/print-componente-lista.png" 
-                    alt="Print do componente Lista.js ">
-                   </div> 
-                   <br>
-                   <br>
-                   ** Para garantir que seja passado somente strings e numbers,<br>
-                   vamos importa o <b>PropTypes</b> pacote que já vem com o React.<br>
-                   Irá fazer a validação se é string e numbers, que estão sendo passada.<br>
-                   <div class="imagem">
-                    <img src="./imagens/imagem-aula8/print-componente-Item-com-proptypes-string.png" 
-                    alt="print componente Item, usando o PropTypes.">
-                   </div>
-                   <br>
-                   Neste caso está dizendo que a marca é uma string, ou seja, texto,<br>
-                   Se não for uma string, colocar um número, irá dá erro no console:<br>
-                   <div class="imagem">
-                    <img src="./imagens/imagem-aula8/print-pagina-mostrando-os-erros.png" 
-                    alt="Print da página, mostrando os erros que aparece no console.">
-                   </div>
-                   <br>
-                   <br>
-                   ** Pode ser adicionado no código o <b>isRequired</b>, será obrigátorio, <br>
-                   <b>marca: PropTypes.string.isRequired,</b> <br>
-                   <br>
-                   O erro aparecer somente no console, a página abrirá normalmente.<br>
-                   É uma validação a nível de programador, por isso a página funciona normal.<br>
-                   <br>
-                   <br>
-                   <b>DefaultProps</b> <br>
-                   Ele vai deixar uma mensagem dizendo algo, se o "item" não estiver ali,<br>
-                   tipo uma mensagem de erro ou aviso que algo não foi feito corretamente.<br>
-                   <br>
-                   Veja o código como fica:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula8/print-codigo-defaultprops.png" 
-                        alt="print do código , mostrando o código defaultProps.">
-                    </div>
-                    <br>
-                    <br>
-                    Como aparece no navegador o erro, ou a mesagem:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula8/print-pagina-mostrando-aviso-defaultprops.png" 
-                        alt="Print da página, que mostra a mensagem que algo está errado.">
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-09-Eventos no React (onclick, onchange e onSubmit)-->
-        <section class="pagina" id="Eventos-no-React-(onClick-onChange-onSubmit)-parte1">
-            <header>
-                <h1 class="titulo"> Eventos no React (onclick, onchange e onSubmit)  </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    Os <b>eventos de React</b> são os mesmo eventos do DOM.<br>
-                    Ou seja, temos eventos para responder a um click.<br>
-                    <b>O evento é atrelado a uma tag</b> que irá executá-lo.<br>
-                    Geralmente um <b>método</b> é atribuido ao evento.<br>
-                    Esse método deve ser criado no componente.<br>
-                    <br>
-                    <br>
-                    <b>Aula prática</b>: <br>
-                    * Crie um novo componente com o nome:<br>
-                    <b>Evento.js</b> para poder usar o evento.<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula9/print-componente-Evento-sem-metodo.png" 
-                        alt="Print do código do componente Evento sem a funçao.">
-                    </div>
-                    <br>
-                    Agora vamos adicionar a função, que será acionada quando clicar.<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula9/print-codigo-meu-evento.png" 
-                        alt="Print do código do componente evento com funcao onclick.">
-                    </div>
-                    <br>
-                    <br>
-                    Na página ficará assim quando for clicado:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula9/print-pagina-evento-onclick.png" 
-                        alt="Print da página mostrando o evento click.">
-                    </div>
-                    <br>
-                    A idéia é sempre essa, mas pode mudar a lógica, valores e proprieadades.<br>
-                    <br> 
-                    <br>
-                    Por exemplo, vamos fazer recendo um número e ao clicar mostra esse número:<br>
-                    Código do Evento.js:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula9/print-codigo-evento-recendo-numero.png" 
-                        alt="Print do código, do componente evento.js, recendo número como parâmetro.">
-                    </div>
-                    <br>
-                    Código do App.js, passando o número e aparecer na página:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula9/print-codigo-App-js-adicionando-numero.png" 
-                        alt="Print código App.js, chamando e adicionando números.">
-                    </div>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-09-Eventos no React (onclick, onchange e onSubmit) parte 2-->
-        <section class="pagina" id="Eventos-no-React-(onClick-onChange-onSubmit)-parte2">
-            <header>
-                <h1 class="titulo"> Eventos no React (onclick, onchange e onSubmit) parte 2 </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    <b>Eventos de Formulário</b> <br>
-                    * Crie um novo componente com o nome:<br>
-                    <b>Form.js</b> <br>
-                    Veja na imagem como deve ser: <br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula9/print-componente-form.png" 
-                        alt="Print do código do componenete form.js como foi feito.">
-                    </div>
-                    <br>
-                    Esse <b>e.preventDefault()</b> que foi adicionado aqui, <br>
-                    serve para dá o sivso aqui no Front-end.<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula9/print-priventDeafault.png" 
-                        alt="Print do código form, mostrando o preventDefaulr.">
-                    </div>
-                    <br>
-                    <br>
-                    Para ser executado, dever ser chamado no componente <b>App.js</b>. <br>
-                    <br>
-                    Veja como fica na página:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula9/print-pagina-cadastro-resultado.png" 
-                        alt="Print da página, mostrando como ficou.">
-                    </div>
-                    <br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-10-useState-->
-        <section class="pagina" id="UseState">
-            <header>
-                <h1 class="titulo"> useState </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    O <b>useState</b> é um hook de react; <br>
-                    Com ele conseguimos <b>manusear o estado </b> de um componente de forma simples. <br>
-                    Este hook <b>funciona muito bem com eventos.</b> <br>
-                    <br>
-                    <br>
-                    <b>Aula prática</b>: <br>
-                    * Vamos usar o formulário, que criamos na outra aula.<br>
-                    * Importa o "useState", no arquivo form.js <br>
-                    * Crie duas variáveis, uma que vai receber e a outra irá setar o valor recebido.<br>
-                    Veja como ficou o código:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula9/print-componente-form-parte1.png" 
-                        alt="primeira parte do print do código do arquivo form.js">
-                    </div>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula9/print-componente-form-2parte.png" 
-                        alt="Segunda parte do print do código do arquivo form.js">
-                    </div>
-                    <br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-11-Passar eventos por props-->
-        <section class="pagina" id="Passar-eventos-por-props">
-            <header>
-                <h1 class="titulo"> Passar eventos por props </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    Os <b>métodos</b> também podem ser passado por props.<br>
-                    Ou seja, um <b>componente filho pode ativar o método de seu pai</b>.<br>
-                    Vamos acessar o método por meio de um <b>evento</b>.<br>
-                    A sintaxe é a mesma de uma props de dados: <b>props.meuEvento</b>.<br>
-                    <br>
-                    <br>
-                    <b>Aula prática</b>: <br>
-                    <br>
-                    Para nosso projeto ficar mais bonito, crie uma pasta dentro da pasta componente,<br>
-                    com o nome de <b>evento</b> para separar nossos componentes.<br>
-                    <br>
-                    Dentro da pasta, vamos criar um novo componente com o nome <b>Button.js</b>.<br>
-                    Veja como deve ser o componente "Button.js": <br>
-                    <b>Não precisa colocar "( )" por que irá retorna somente uma tag "button"</b> <br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula11/print-componente-Button.png" 
-                        alt="Print do código do componente Button.js">
-                    </div>
-                    <br>
-                    Depois de criado o componente, que vai receber algo do pai <b>props</b>.<br>
-                    Vai no componente que já criamos em outra aula, o componente <b>Evento.js</b>,<br>
-                    vamos importa o "Button" nele:<br>
-                    <div class="imagem">
-                        <img src="" alt="">
-                    </div>
-                    <br>
-                    Agora vamos adicionar um evento no filho <b>Button</b>.<br>
-                    <br>
-                    <b> return < button onClick= { props.event }  > { props.text } < /button > </b> <br>
-                    <br>
-                    No <b>App.js</b>, coloque somente um comando para chamar o evento.<br>
-                    <b> < Evento / > </b> <br>
-                    <br>
-                    <br>
-                    No componente <b>Evento.js</b>, faremos algumas modificações:<br>
-                    Veja na imagem como fica o código: <br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula11/print-codigo-componente-Evento.png" 
-                        alt="Print do código co comonente Evento.js">
-                    </div>
-                    <br>
-                    Veja na página como fica:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula11/print-pagina-mostrando-o-evento-em-acao.png" 
-                        alt="Print da página, mostrando que o evento funcionou direitinho.">
-                    </div>
-                    <br>
-                    <br>
-                    Tem como usar o mesmo Evento, somente modificando as props,<br>
-                    vamos ver como usar o mesmo componente para dois eventos diferentes:<br>
-                    <br>
-                    No componente <b>Evento.js</b>, vamos adicionar outra "function" e outro "button",<br>
-                    com nomes diferentes, mas que executaram o mesmo evento:<br>
-                    Veja como é o código:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula11/print-codigo-componente-Evento-com-dois-eventos.png" 
-                        alt="Print do código do componente Evento.js , mas agora com dois eventos diferentes.">
-                    </div>
-                    <br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-12-Renderização por condição-->
-        <section class="pagina" id="Renderizaçao-por-condição">
-            <header>
-                <h1 class="titulo"> Renderização por condição </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    Podemos atrelar a exibição de algum elementoa um <b>if</b>.<br>
-                    Esta ação é chamada de <b>renderização condicional</b>; <br>
-                    Envolvemos as tags em chaves <b>{ }</b>; <br>
-                    Como as chaves <b>executam JavaScript</b>, criamos nossa condição;<br>
-                    É possível usar o <b>state</b> para criar as condições; <br>
-                    <br>
-                    <br>
-                    <b>Aula prática</b>:<br>
-                    * No componente "App.js" pode deixar apenas o "h1", escrito assim:<br>
-                    <b>Renderização condicional</b> <br>
-                    <br>
-                    * Vamos criar um novo componente, com o nome de:<br>
-                    <b>Condicional.js</b> <br>
-                    <br>
-                    * Criaremos um formulário básico, veja na imagem o código:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-simples.png" 
-                        alt="Print do código do componente Condicional.js">
-                    </div>
-                    <br>
-                    * Para ele aparecer na página, deve ser chamado no componente "App.js".<br>
-                    <br>
-                    Agora iremos adicionar o "useState", importando no componente <b>Condicional.js</b>;<br>
-                    Criando duas variáveis:<br>
-                    <b>const [ email, setEmail ] = useState( ) </b> <br>
-                    <br>
-                    Para seta o "email", vamos usar o <b>onChange</b>;<br>
-                    Vamos adicionar ele na tag "input", ficando assim:<br>
-                    <b>onChange={ (e) => setEmail(e.target.value) } </b> <br> 
-                    <br>
-                    Mas queremos manipular esse email como se fosse email do usuário;<br>
-                    Para vamos criar outro "state":<br>
-                    <b>const [ userEmail, setUserEmail ] = useState( ) </b> <br>
-                    <br>
-                    Vamos criar um método que quando o usuário clicar o email seja o userEmail;<br>
-                    No "function enviarEmail", vamos apagar o "console.log" e colocar assim:<br>
-                    <b>setUserEmail(email)</b> <br>
-                    <br>
-                    Para saber se deu certo, vamos colocar abaixo do button, assim:<br>
-                    <b>{ userEmail }</b> <br>
-                    <br>
-                    Veja como fica todo o código na imagem:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-com-useState.png" 
-                        alt="Print do código do componente Condicional.js, usando o useState.">
-                    </div>
-                    <br>
-                    <br>
-                    Na página deve aparecer assim:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula12/print-pagina-usando-useState.png" 
-                        alt="Print da página depois de usar o useState.">
-                    </div>
-                    <br>
-                    <br>
-                    Agora podemos fazer uma verificação nesse "email";<br>
-                    Se for "verdadeiro" será adicionado outra "div":<br>
-                    Para isso, onde adicionamos o <b>{ userEmail }</b>, abaixo do button,<br>
-                    vamos adicionar isso:<br>
-                    <b>{ userEmail && ( </b> <br>
-                    __<b> < div > </b> <br>
-                    ______<b> < p > O email do usuário é: { userEmail } < /p > </b> <br>
-                    __<b> < /div > </b> <br>
-                    <b>)}</b> <br>
-                    <br>
-                    Veja o código como fica depois dessa atualização:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-com-useState-fazendo-verificacao.png" 
-                        alt="Print código Componente Condicional, fazendo a verificação no email do usuário.">
-                    </div>
-                    <br>
-                    <br>
-                    Veja na página como fica agora:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula12/print-pagina-fazendo-a-verificacao.png" 
-                        alt="Print da página depois de fazer a verificação.">
-                    </div>
-                    <br>
-                    Podemos fazer um outro evento para limpar o email,<br>
-                    fazendo a alteração nessa mesma "div":<br>
-                    Para isso, basta adicionar um button dentro da verificação, abaixo do "p":<br>
-                    <b> < button onClick = { limparEmail } > Limpar email < /button > </b> <br>
-                    <br>
-                    Agora criamos uma "function" que deixará vazio o "setUserEmail":<br>
-                    <b>setUserEmail ( ' ' ) </b> <br>
-                    <br>
-                    Veja o código como fica agora:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula12/print-codigo-componente-Condicional-Limpando-email.png" 
-                        alt="Print do código componente, agora com a função de limmpar o email.">
-                    </div>
-                    <br>
-                    Veja como aparece na página: <br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula12/print-pagina-funcao-limpar-email.png" 
-                        alt="Print página mostrando a opção para limpar o email.">
-                    </div>
-                    <br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-13-Renderização de listas-->
-        <section class="pagina" id="Renderizaçao-de-listas">
-            <header>
-                <h1 class="titulo"> Renderização de listas </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    Para renderizar uma lista vamos primeiramente precisar de um <b>array</b>;<br>
-                    Depois utilizamos a <b>função map</b>, para percorre cada um dos itens.<br>
-                    Podendo assim renderizar algo na tela.<br> 
-                    É possível <b>unir operadores condicionais</b> com a renderização de lista.<br>
-                    <br>
-                    <br>
-                    <b>Aula prática</b>:<br>
-                    * Vai no componente "App.js", e pode tirar a tag <b>Condicional</b>,<br>
-                    e mudar o nome do titulo para : "Renderização de listas"<br>
-                    <br>
-                    * Vamos criar uma lista, dentro do componente "App.js"<br>
-                    // A variável irá receber esses nomes.<br>
-                    <b>const meusItens = [ 'React', 'vue', 'Angular' ] </b> <br>
-                    <br>
-                    * Agora vamos criar um novo componente, com o nome de : "OutraLista.js",<br>
-                    dentro dele vamos fazer assim, como está na imagem:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula13/print-codigo-componente-OutraLista.png" 
-                        alt="Print do código do componente OutraLista.js">
-                    </div>
-                    <br>
-                    <br>
-                    Para que ela apareça na página, tem que chamar ele no "App.js",<br>
-                    e adicionar a props:<br>
-                    <b> < OutraLista itens= { meusItens } / > </b> <br>
-                    <br>
-                    <br>
-                    <b>Quando a lista estiver vazia</b> <br>
-                    * Vamos dizer que não foi encontrado nada na lista, então faremos um <b>if</b> e <b>else</b>,<br>
-                    para caso estiver vazia, dá uma resposta ao usuário.<br>
-                    <br>
-                    Vamos fazer algumas modificações no código do componente "OutraLista",
-                    adicionar um if e else, que quando a lista estiver vazia vai exibir uma mensagem:<br>
-                    Veja como fica na imagem o código:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula13/print-codigo-componente-OutraLista-com-IF-e-ELSE.png" 
-                        alt="Print do código, do componente OutraLista.js, com if e else.">
-                    </div>
-                    <br>
-                    <br>
-                    Na hora de chamar, no componente "App.js", só coloca uma lista vazia:<br>
-                    <b> < OutraLista itens= { [ ] } / > </b> <br>
-                    <br>
-                    <br>
-                    Veja como fica a página:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula13/print-pagina-como-fica-usando-a-renderizacao-de-lista.png" 
-                        alt="Print da página, mostrando como ficou depois de usar a renderização de listas.">
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-14-State Lift-->
-        <section class="pagina" id="state-lift">
-            <header>
-                <h1 class="titulo"> State Lift </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    <b>State Lift</b> é uma tecnica ultilizada para compartilhar o state.<br>
-                    É normal vários componentes <b>dependerem do mesmo estado</b>;<br>
-                    Então precisamos elevar o nível do mesmo a um <b>componente pai</b>;<br>
-                    Então centralizamos o state no pai, e <b>definimos quem usa e quem define </b> (setState) <br>
-                    <br>
-                    <br>
-                    <b>Aula prática</b>: <br>
-                    * Tire algumas coisas, do componente "App.js", deixe somente o titulo:<br>
-                    <b>State Lift</b> <br>
-                    <br>
-                    * Agora vamos criar um novo componente, com o nome: <br>
-                    <b>SeuNome.js</b> <br>
-                    Veja na imagem como é o código:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula14/print-codgo-componente-SeuNome.png" 
-                        alt="Print do código do componente SeuNome.js">
-                    </div>
-                    <br>
-                    * Para aplicar o recurso "State Lift", vamos adicionar no componente "pai",<br>
-                    que no nosso caso está sendo o componente <b>App.js</b>, mas poderia ser outro.<br>
-                    <br>
-                    Veja o código como deve ser feito:<br>
-                    <div>
-                        <img src="./imagens/imagem-aula14/print-codigo-app-componente-pai.png" 
-                        alt="Print código do componente App.js, que será o componente pai.">
-                    </div>
-                    <br>
-                    <br>
-                    * Para passar o nome, que vai está no filho para o pai,<br>
-                    faremos uma modificação no código do componente <b>SeuNome.js</b>:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula14/print-codigo-componente-SeuNome-diferente.png" 
-                        alt="Print doo código do componente SeuNome.js, atualizado para receber">
-                    </div>
-                    <br>
-                    <br>
-                    * Vamos utilizar esse dado de outra forma.<br>
-                    * Crie outro componente com o nome <b>Saudacao</b> que vai receber o dado do "State",<br>
-                    e fazer uma verificação se tiver um nome vai exibir uma saudação.<br>
-                    <br>
-                    Veja como é o código do componente <b>Saudacao.js</b>:<br>
-                    Usaremos uma condição, se estiver nome vai aparecer se não, nada aparece na página.<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula14/print-codigo-componente-Saudacao.png" 
-                        alt="Print do código do componente Saudacao.js, mostrando como deve ficar.">
-                    </div>
-                    <br>
-                    <br>
-                    Agora veja na imagem abaixo, como deve ficar sua página:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula14/print-da-pagina-mostrando-como-ficou-depois-de-usar-o-state-lift.png" 
-                        alt="Print da página mostrando como ficou depois de usar o state lift.">
-                    </div>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-15-React Router-->
-        <section class="pagina" id="React-Router">
-            <header>
-                <h1 class="titulo"> React Router</h1>
-            </header>
-            <div class="description">
-                <h2>
-                    O <b>React Router</b> é um pacote para mudança de URLs da apllicação;<br>
-                    Podemos assim acessar outras views, <b>sem o page reload</b>;<br>
-                    <b>Trocando apenas uma parte do layout da aplicação</b>, ou seja, o que muda de view para view.<br>
-                    Precisamos <b>instalar esse pacote</b> no projeto;<br>
-                    E também realizar algumas mudanças em como o App é estruturado;<br>
-                    <br>
-                    <br>
-                    <b>Aula prática</b>: <br>
-                    * Primeiro passo é instalar o pacote, no pront de comando,<br>
-                    Verifique se você está dentro da pasta do projeto, coloque:<br>
-                    <b>npm install react-router-dom</b> e dê enter para instalar...<br>
-                    <br>
-                    * Vamos limpar o componente "App.js", deixando ele como na imagem abaixo:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-código-app-limpo.png" 
-                        alt="Print do componente App.js, sem nada para começar a usar o router-DOM.">
-                    </div>
-                    <br>
-                    * Depois disso vamos usar uma série de componentes do react-Dom,<br>
-                    vamos importa eles no App.js.<br>
-                    <b>import { BrowserRouter as Router, Route, Link } from 'react-router-dom'</b> <br>
-                    <br>
-                    * Depois iremos envolver toda nossa aplicação em <b>Router</b>,<br>
-                    Dentro dele, criamos uma barra de navegação, com links para as páginas.<br>
-                    Para isso criamos uma tag <b>ul</b> dentro dela <b>li</b> e dentro da <b>li</b>:
-                    <br>
-                    Usaremos o <b>Link</b> que importamos que será como a tag "a",<br>
-                    dentro do Link ao invés de usar o "href" usaremos o <b>to=""</b>;<br>
-                    <br>
-                    Vamos cria o link para  página "Home", colocando assim:<br>
-                    <b> < Link to="/" > Home < /Link > </b> <br>
-                    <br>
-                    Depois criaremos mais dois links, para outras páginas.<br>
-                    Veja o código do App.js, como fica:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-código-app-definindo-Router-Links.png" 
-                        alt="Print do componente App.js, com as Router e Links, mas falta definir outras coisas ainda.">
-                    </div>
-                    <br>
-                    <br>
-                    <b>Criar as páginas Home, Empresa.js e Contato.js</b>: <br>
-                    * Dentro da pasta <b>components</b>, crie uma nova pasta com o nome de <b>pages</b>, <br>
-                    dentro dela crie um novo componente com o nome "Home.js", como na imagem:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-componente-Home.png" 
-                        alt="Print do componente Home.js .">
-                    </div>
-                    <br>
-                    * Os outros componentes serão praticamentes iguais, basta copiar do Home.js <br>
-                    modifique somente o nome deles, colocando: Empresa, Contato.<br>
-                    <br>
-                    <br>
-                    * Agora precisamos configurar o App.js, para poder ter acesso as páginas que criamos.<br>
-                    Para isso vamos usar o <b>Routes</b> e declarar nossas rotas;<br>
-                    Veja o código como deve ficar na imagem abaixo:
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-código-app-definindo-Routes-as-rotas-dos-links.png" 
-                        alt="Print do componente App.js, mostrando como usar o Routes para definir as rotas doa links.">
-                    </div>
-                    <br>
-                    <br>
-                    * Para deixar melhor nosso projeto, vamos criar um componente de menu de navegação.<br>
-                    * Na pasta "components" crie um com o nome: <b>Navbar</b>, copie a tag "ul", <br>
-                    e coloque dentro desse novo componente.<br>
-                    Veja na imagem como fica:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-componente-Navbar.png" 
-                        alt="Print do componente Navbar.js, mostrando como foi feito o código.">
-                    </div>
-                    <br>
-                    * Agora modificamos o componente <b>App.js</b>, tirando as tags "ul e li",<br>
-                    e importando o componente "Navbar.js" e colando ele no lugar das tags.<br>
-                    Veja na imagem como fica:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-código-App-usando-a-Navbar.png" 
-                        alt="Print do componente App.js, usando o componente Navbar.js e sem as tags ul e li.">
-                    </div>
-                    <br>
-                    <br>
-                    * Podemos também já criar o componente <b>Footer.js</b>, que é o Rodapé da página,<br>
-                    crie uma nova pasta com o nome "layout" dentro dela, coloque o componente,<br>
-                    "Navbar.js" e crie o <b>Footer.js</b> .<br> 
-                    Veja como será:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-componete-Footer.png" 
-                        alt="Print do componente Footer.js">
-                    </div>
-                    <br>
-                    * Basta adicionar ele no componente "App.js", no final do <b>Routes</b>,<br>
-                    e importa ele no começo.<br>
-                    Veja como fica o componente "App.js" agora finalizado:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-código-App-finalizado.png" 
-                        alt="Print do componente App.js, agora finalizado.">
-                    </div>
-                    <br>
-                    <br>
-                    * Agora para melhorar ainda mais, vamos adicionar um <b>CSS Module</b>,<br>
-                    no componente "Navbar.js".<br>
-                    * Dentro da pasta "layout", cria um css module assim:<br>
-                    <b>Navbar.module.css</b> <br>
-                    Veja como será:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-Navbar-module-css.png" 
-                        alt="Print do Navbar.module.css">
-                    </div>
-                    <br>
-                    <br>
-                    * Para usar no componente "Navbar" temos que importa e criar as classes:<br>
-                    Veja na imagem como fica o componente <b>Navbar.js</b>:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-componente-Navbar-finalizado.png" 
-                        alt="Print do componente Navbar.js, finalizado com tudo certo.">
-                    </div>
-                    <br>
-                    <br>
-                    Veja como fica a página depois de tudo isso:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-pagina-finalizada-react-router-dom.png" 
-                        alt="Print da página depois de realizado tudo o que foi visto sobre react-router-Dom">
-                    </div>
-                    <br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <!--Aula-16-React Icons-->
-        <section class="pagina" id="react-icons">
-            <header>
-                <h1 class="titulo"> React Icons </h1>
-            </header>
-            <div class="description">
-                <h2>
-                    O <b>React Icons</b> é um pacote de icones externo; <br>
-                    Precisamos <b>adicionar ao projeto atráves do npm</b>; <br>
-                    Ele nos permite adicionar icones ao projeto com uma, <br>
-                    <b>sintaxe parecida a de um componente</b>; <br>
-                    Além disso <b>há uma grande quantidade de icons</b> disponivéis; <br>
-                    <br>
-                    <br>
-                    <b>Aula prática</b>: <br>
-                    * Vamos no site dá uma olhada no React Icons, só pesquisar no google.<br>
-                    <a href="https://react-icons.github.io/react-icons/">React Icons</a> <br>
-                    <br>
-                    <br>
-                    * Vamos instalar o React Icons, se o projeto tiver ativo, desativa ele,<br>
-                    no pront de comando coloque o <b>Ctrl + C </b>, vai fechar o projeto. <br>
-                    <br>
-                    * Agora vamos instalar o pacote do React Icons, no pront de comando coloque:<br>
-                    <b>npm install react-icons</b> e dê enter.<br>
-                    <br>
-                    * Vamos adicionar icons no componente <b>Footer.js</b>; <br>
-                    Vamos adicionar icon das redes socias. <br>
-                    * Dentro do componente "Footer.js", vamos importa os icons:<br>
-                    // Importando os iconis de Facebook, Instagram e Linkedin:<br>
-                    <b>import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa' ;</b> <br>
-                    <br>
-                    Adicionamos dentro do return:<br>
-                    Criamos uma lista, com a tag "ul" e dentro das "li" adicionar os icons;<br>
-                    <br>
-                    * Executamos o projeto, no pront de comando usando o <b>npm start</b> <br>
-                    <br>
-                    <br>
-                    Veja como fica o código, no componente "Footer.js":<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-componente-Footer-usando-icons.png" 
-                        alt="Print do componente Footer.js, mostrando a importação e o uso do icons.">
-                    </div>
-                    <br>
-                    <br>
-                    Agora vamos criar um style, o CSS para o componente Footer.js, <br>
-                    para isso vamos criar um CSS Módule, dentro da pasta "layout":<br>
-                    <b>Footer.module.css</b> <br>
-                    E dentro dela vamos criar os estilos.<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-componente-Footer-module-css.png" 
-                        alt="Print do componente Footer module css, com os estilos que serão adicionados no componente">
-                    </div>
-                    <br>
-                    <br>
-                    * Agora vamos importa os estilos no Footer.js, e adicionar as classes:<br>
-                    Veja na imagem como fica o código: <br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-componente-Footer-adicionando-estilos-css-module-classes.png" 
-                        alt="print do componente Foote.js, adicionando os estilos e classes.">
-                    </div>
-                    <br>
-                    <br>
-                    Veja na página como fica:<br>
-                    <div class="imagem">
-                        <img src="./imagens/imagem-aula15/print-da-pagina-como-fica-depois-de-adicionar-os-icons.png" 
-                        alt="Print da página, mostrando como fica depois de usar os icons e seu estilo.">
-                    </div>
-                    <br>
-                    <br>
-                </h2>
-            </div>
-        </section>
-        <br>
-        <br>
     </main>
 </body>
 </html>
